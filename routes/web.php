@@ -22,6 +22,9 @@ Route::get('/blog/post/author/{username}', [BlogContoller::class, 'authorPosts']
 Route::get('/blog/post/tag/{slug}', [BlogContoller::class, 'tagPosts'])->name('blog_tag_posts');
 Route::get('/contact', [BlogContoller::class, 'contactPage'])->name('contact');
 Route::post('/contact', [BlogContoller::class, 'sendEmail'])->name('send_email');
+Route::get('/about', [BlogContoller::class, 'aboutPage'])->name('about');
+Route::get('/portfolio', [BlogContoller::class, 'portfolioPage'])->name('portfolio');
+
 
 
 

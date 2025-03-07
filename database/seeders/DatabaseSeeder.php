@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             ParentCategorySeeder::class,
             CategorySeeder::class,
+            UserSocialLinkSeeder::class,
+            PostSeeder::class,
 
         ]);
 

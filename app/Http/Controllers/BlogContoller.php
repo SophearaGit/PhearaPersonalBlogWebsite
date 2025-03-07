@@ -263,6 +263,26 @@ class BlogContoller extends Controller
         return view('front.pages.contact');
     }
 
+    public function aboutPage(Request $request)
+    {
+        $title = 'About Me';
+        $description = 'About me, my background, and my passion for technology. I am always eager to learn and share knowledge.';
+        SEOTools::setTitle($title, false);
+        SEOTools::setDescription($description);
+
+        return view('front.pages.about');
+    }
+
+    public function portfolioPage(Request $request)
+    {
+        $title = 'Portfolio';
+        $description = 'View my portfolio of projects, including web, mobile, and software development. I am always looking for new opportunities to showcase my skills.';
+        SEOTools::setTitle($title, false);
+        SEOTools::setDescription($description);
+
+        return view('front.pages.portfolio');
+    }
+
     public function sendEmail(Request $request)
     {
         // validate the request data
