@@ -31,108 +31,59 @@
                                 {{ isset(user()->bio) ? user()->bio : 'I am a passionate web developer specializing in Laravel, with expertise in both front-end and back-end development.' }}
                             </p>
                             <div class="cs_social_btns d-flex">
-                                <a class="cs_accent_color_2" href="#">
-                                    <svg width="13" height="22" viewBox="0 0 13 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                                <a class="cs_accent_color_2" href="#">
-                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.3002 23V18.6C15.4532 17.222 15.0581 15.8391 14.2002 14.75C17.5002 14.75 20.8002 12.55 20.8002 8.7C20.8882 7.325 20.5032 5.972 19.7002 4.85C20.0082 3.585 20.0082 2.265 19.7002 1C19.7002 1 18.6002 1 16.4002 2.65C13.4962 2.1 10.5042 2.1 7.60016 2.65C5.40016 1 4.30016 1 4.30016 1C3.97016 2.265 3.97016 3.585 4.30016 4.85C3.49922 5.96747 3.11048 7.32807 3.20016 8.7C3.20016 12.55 6.50016 14.75 9.80016 14.75C9.37116 15.289 9.05216 15.905 8.86516 16.565C8.67816 17.225 8.62316 17.918 8.70016 18.6V23"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M8.7 18.5999C3.739 20.7999 3.2 16.3999 1 16.3999" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                                <a class="cs_accent_color_2" href="#">
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M13.5 9C12.67 9 12 8.33 12 7.5V2.5C12 1.67 12.67 1 13.5 1C14.33 1 15 1.67 15 2.5V7.5C15 8.33 14.33 9 13.5 9Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M19.5 9H18V7.5C18 6.67 18.67 6 19.5 6C20.33 6 21 6.67 21 7.5C21 8.33 20.33 9 19.5 9Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M8.5 13C9.33 13 10 13.67 10 14.5V19.5C10 20.33 9.33 21 8.5 21C7.67 21 7 20.33 7 19.5V14.5C7 13.67 7.67 13 8.5 13Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M2.5 13H4V14.5C4 15.33 3.33 16 2.5 16C1.67 16 1 15.33 1 14.5C1 13.67 1.67 13 2.5 13Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M13 13.5C13 12.67 13.67 12 14.5 12H19.5C20.33 12 21 12.67 21 13.5C21 14.33 20.33 15 19.5 15H14.5C13.67 15 13 14.33 13 13.5Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M14.5 18H13V19.5C13 20.33 13.67 21 14.5 21C15.33 21 16 20.33 16 19.5C16 18.67 15.33 18 14.5 18Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M9 8.5C9 7.67 8.33 7 7.5 7H2.5C1.67 7 1 7.67 1 8.5C1 9.33 1.67 10 2.5 10H7.5C8.33 10 9 9.33 9 8.5Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M7.5 4H9V2.5C9 1.67 8.33 1 7.5 1C6.67 1 6 1.67 6 2.5C6 3.33 6.67 4 7.5 4Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-
-                                </a>
-                                <a class="cs_accent_color_2" href="#">
-                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.7367 7.3158C17.4117 7.3158 19.0182 7.98121 20.2026 9.16565C21.3871 10.3501 22.0525 11.9565 22.0525 13.6316V21H17.842V13.6316C17.842 13.0732 17.6201 12.5378 17.2253 12.1429C16.8305 11.7481 16.295 11.5263 15.7367 11.5263C15.1783 11.5263 14.6429 11.7481 14.248 12.1429C13.8532 12.5378 13.6314 13.0732 13.6314 13.6316V21H9.4209V13.6316C9.4209 11.9565 10.0863 10.3501 11.2708 9.16565C12.4552 7.98121 14.0616 7.3158 15.7367 7.3158Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M5.21053 8.36841H1V21H5.21053V8.36841Z" stroke="currentColor"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                            d="M3.10526 5.21053C4.26797 5.21053 5.21053 4.26797 5.21053 3.10526C5.21053 1.94256 4.26797 1 3.10526 1C1.94256 1 1 1.94256 1 3.10526C1 4.26797 1.94256 5.21053 3.10526 5.21053Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-
-                                </a>
-                                <a class="cs_accent_color_2" href="#">
-                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M3 1H19C20.1 1 21 1.9 21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3C1 1.9 1.9 1 3 1Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M21 3L11 10L1 3" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-
-                                </a>
-                                <a class="cs_accent_color_2" href="#">
-                                    <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12.4286 17C9.8 17 5.11429 16.7714 3.17143 16.3143C2.37143 16.0857 1.8 15.5143 1.57143 14.7143C1.22857 13.4571 1 10.8286 1 9C1 7.17143 1.22857 4.54286 1.57143 3.28571C1.8 2.48571 2.37143 1.91429 3.17143 1.68571C5.11429 1.22857 9.8 1 12.4286 1C15.0571 1 19.7429 1.22857 21.6857 1.68571C22.4857 1.91429 23.0571 2.48571 23.2857 3.28571C23.6286 4.54286 23.8571 7.17143 23.8571 9C23.8571 10.8286 23.6286 13.4571 23.2857 14.7143C23.0571 15.5143 22.4857 16.0857 21.6857 16.3143C19.7429 16.7714 15.0571 17 12.4286 17Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M10.1426 12.4287L15.8569 9.0001L10.1426 5.57153V12.4287Z"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </a>
+                                {{-- START DISPLAY USER SOCIAL LINK BY ID --}}
+                                @php
+                                    if (!empty(user())) {
+                                        # code...
+                                        $socialLinks = social_links(user()->id);
+                                    } else {
+                                        # code...
+                                        $socialLinks = social_links(1);
+                                    }
+                                @endphp
+                                @if ($socialLinks)
+                                    <a class="cs_accent_color_2" href="{{ $socialLinks->facebook_url }}">
+                                        <svg width="13" height="22" viewBox="0 0 13 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a class="cs_accent_color_2" href="{{ $socialLinks->github_url }}">
+                                        <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.3002 23V18.6C15.4532 17.222 15.0581 15.8391 14.2002 14.75C17.5002 14.75 20.8002 12.55 20.8002 8.7C20.8882 7.325 20.5032 5.972 19.7002 4.85C20.0082 3.585 20.0082 2.265 19.7002 1C19.7002 1 18.6002 1 16.4002 2.65C13.4962 2.1 10.5042 2.1 7.60016 2.65C5.40016 1 4.30016 1 4.30016 1C3.97016 2.265 3.97016 3.585 4.30016 4.85C3.49922 5.96747 3.11048 7.32807 3.20016 8.7C3.20016 12.55 6.50016 14.75 9.80016 14.75C9.37116 15.289 9.05216 15.905 8.86516 16.565C8.67816 17.225 8.62316 17.918 8.70016 18.6V23"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M8.7 18.5999C3.739 20.7999 3.2 16.3999 1 16.3999" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                    <a class="cs_accent_color_2" href="{{ $socialLinks->linkedin_url }}">
+                                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.7367 7.3158C17.4117 7.3158 19.0182 7.98121 20.2026 9.16565C21.3871 10.3501 22.0525 11.9565 22.0525 13.6316V21H17.842V13.6316C17.842 13.0732 17.6201 12.5378 17.2253 12.1429C16.8305 11.7481 16.295 11.5263 15.7367 11.5263C15.1783 11.5263 14.6429 11.7481 14.248 12.1429C13.8532 12.5378 13.6314 13.0732 13.6314 13.6316V21H9.4209V13.6316C9.4209 11.9565 10.0863 10.3501 11.2708 9.16565C12.4552 7.98121 14.0616 7.3158 15.7367 7.3158Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M5.21053 8.36841H1V21H5.21053V8.36841Z" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M3.10526 5.21053C4.26797 5.21053 5.21053 4.26797 5.21053 3.10526C5.21053 1.94256 4.26797 1 3.10526 1C1.94256 1 1 1.94256 1 3.10526C1 4.26797 1.94256 5.21053 3.10526 5.21053Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                @else
+                                @endif {{-- END DISPLAY USER SOCIAL LINK BY ID --}}
                             </div>
                             <div class="cs_btns">
                                 <a href="#" class="cs_btn cs_style_1" download><span>Download CV</span></a>
                                 <a class="cs_font_24 cs_accent_color_2 cs_accent_color_2_hover cs_text_btn cs_type_2 cs_semi_bold"
-                                    href="contact.html">Let’s Talk</a>
+                                    href="{{ route('contact') }}">Let’s Talk</a>
                             </div>
                         </div>
                     </div>
@@ -200,7 +151,7 @@
                                 venenatis
                                 vitae, justo. </p>
                             <div class="cs_height_25 cs_height_lg_20"></div>
-                            <a class="cs_btn cs_style_1" href="contact.html"><span>Hire Me</span></a>
+                            <a class="cs_btn cs_style_1" href="{{ route('contact') }}"><span>Hire Me</span></a>
                         </div>
                         <div class="cs_height_lg_30"></div>
                     </div>
@@ -272,7 +223,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cs_iconbox cs_style_2 cs_radius_20 cs_transition_4">
+                            {{-- <div class="cs_iconbox cs_style_2 cs_radius_20 cs_transition_4">
                                 <div class="cs_iconbox_in">
                                     <div class="cs_iconbox_icon cs_center">
                                         <img src="/front/assets/img/icon/about_icon_3.svg" alt="Icon">
@@ -304,7 +255,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -312,6 +263,187 @@
             <div class="cs_height_150 cs_height_lg_80"></div>
         </section>
         <!-- End About Section -->
+
+        <!-- Start Blog Section -->
+        <section class="cs_filled_bg" data-src="/front/assets/img/bg/blog_bg_2.png">
+            <div class="cs_height_145 cs_height_lg_75"></div>
+            <div class="container">
+                <div class="d-md-flex justify-content-between">
+                    <div class="cs_section_heading cs_style_1">
+                        <p class="cs_section_subtitle cs_accent_color_2 cs_font_16 wow fadeInLeft"
+                            data-wow-duration="0.8s" data-wow-delay="0.2s">
+                            <span>Blog Posts</span>
+                            <svg width="17" height="21" viewBox="0 0 17 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.1794 0.136775C10.2881 0.345851 9.66098 0.907053 8.49451 2.56862C8.16439 3.04177 7.83427 3.42691 7.75723 3.42691C7.52618 3.42691 6.88797 3.82302 6.63489 4.37322C6.50283 4.65937 6.24975 5.03346 6.07372 5.22054C5.45753 6.02382 6.2938 6.05681 4.88531 7.87246C2.75059 10.6454 1.89221 12.0209 1.81517 12.7691C1.72715 13.6935 0.186681 18.6012 0.494775 19.4485C0.703801 20.0427 1.40809 20.1637 2.43144 19.8556C4.26904 19.3054 7.55926 16.8846 8.1865 16.3454C8.98977 15.6521 11.2455 11.6688 11.5206 11.6578C11.8287 11.6467 12.4669 11.3386 12.577 11.2286C13.0832 10.7224 14.5247 8.2906 14.6567 7.66336C14.7117 7.39931 14.6346 7.15721 14.6346 6.84911C14.6346 6.66203 14.9098 6.23292 15.449 5.56163C16.5273 4.23018 16.5383 4.19719 15.9001 2.87671C14.7557 0.576917 13.2152 -0.325383 11.1794 0.136775ZM12.621 0.686965C13.5673 0.918049 14.4697 1.71033 15.0088 2.7557C15.526 3.77906 15.4269 4.03213 13.7434 6.08989C13.6994 6.13385 13.5673 5.84779 13.3693 5.55066C12.6099 4.38427 11.3555 3.53695 9.67195 3.36092C9.02277 3.29485 8.86868 3.54792 10.0021 2.00745C10.3983 1.46824 10.6293 1.17113 10.8053 0.984064C11.1025 0.686965 11.7407 0.477898 12.621 0.686965ZM10.0461 4.14217C11.5756 4.63735 12.1148 4.95641 13.0061 6.61798C13.5783 7.68538 13.5233 7.56437 12.8741 8.34562C12.6209 8.65371 12.599 8.65371 12.5219 8.45566C12.2579 7.71838 12.0378 7.32227 11.4106 6.71705C10.2551 5.72669 9.93608 5.99082 10.8714 7.06919C11.9387 8.31262 12.1588 9.02788 11.7517 9.95216C11.5096 10.4914 11.3335 10.6784 11.2785 10.4473C10.5853 7.88344 9.05577 6.79409 7.33918 6.64C6.62392 6.57401 6.52485 6.40895 6.92104 5.9688C7.16307 5.70467 7.51521 5.82576 8.3735 5.9358C8.75864 5.99082 8.78067 5.46265 8.35148 5.35261C7.79031 5.20949 7.60322 5.02249 8.03233 4.36225C8.42852 3.77906 8.80269 3.73501 10.0461 4.14217ZM9.01172 4.67034C8.80269 4.80241 8.74759 5.07751 9.46284 5.33058C10.1451 5.57269 10.4973 5.39657 10.4973 5.08848C10.4973 4.96747 10.4092 4.78038 10.1121 4.71439C9.716 4.61532 9.13281 4.5933 9.01172 4.67034ZM7.93334 7.32227C8.05435 7.39931 8.06541 7.41028 7.65824 8.0155C6.65692 9.50104 6.24975 10.0732 5.95263 10.4143C5.78757 10.6014 5.41348 11.1626 5.11636 11.6578C4.159 13.2864 3.32281 13.8036 2.95962 12.9892C2.82763 12.7032 2.86055 12.373 3.02561 12.1199C3.49876 11.3937 6.06275 7.35526 6.68991 7.1902C7.20711 7.04717 7.74626 7.20126 7.93334 7.32227ZM9.22082 7.97145C10.0351 8.81877 10.1451 9.358 9.50689 10.1392C8.31848 11.6028 6.44781 14.1226 5.69955 14.6618C5.1934 15.025 4.9513 13.9685 5.09442 13.3084C5.28142 12.417 6.02967 11.2176 7.68027 9.04991C8.62658 7.78445 8.79164 7.53138 9.22082 7.97145ZM10.3542 10.6894C10.3872 10.9315 10.5193 11.2616 10.2551 11.6248C10.0681 11.8888 9.46284 12.8902 8.97872 13.6934C8.14245 15.1019 7.04206 16.0373 6.95404 15.7952C6.844 15.4981 7.47116 14.0896 8.05435 13.2864C9.51786 11.3167 10.2111 9.72112 10.3542 10.6894ZM4.23604 14.2106C4.26904 15.08 4.78624 15.4541 5.64453 15.223C6.19473 15.08 6.19473 15.0689 5.97465 15.5861C5.87567 15.8172 5.82065 16.1473 5.84259 16.3234C5.89761 16.6756 5.7766 16.7195 4.92936 17.2588C4.80827 17.3357 4.65418 17.3027 4.57722 17.1817C4.13706 16.5104 3.52078 16.1693 2.82755 16.0593C2.13432 15.9492 2.17837 16.0703 2.38739 14.9699L2.5635 14.0346C2.70654 14.0346 3.23471 14.1556 3.72989 13.9355C3.939 13.8475 4.15908 13.7595 4.15908 13.7595C4.15908 13.7595 4.23604 13.9685 4.23604 14.2106Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </p>
+                        <h2 class="cs_section_title cs_font_48 cs_semi_bold">My latest <span
+                                class="cs_accent_color">articles</span>
+                        </h2>
+                    </div>
+                    <div class="align-self-end">
+                        <div class="cs_height_25 cs_height_lg_25"></div>
+                        <a class="d-inline-flex cs_gap_15 align-items-center text-uppercase cs_letter_spacing_15 cs_font_16 cs_accent_color"
+                            href="{{ route('blog') }}">
+                            <span class="cs_text_btn">View All Post</span>
+                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="cs_height_70 cs_height_lg_30"></div>
+                <div class="cs_blog_group_1">
+                    @if (!empty(latest_posts(0, 1)))
+                        @foreach (latest_posts(0, 1) as $latest_posts)
+                            <div
+                                class="cs_blog cs_style_3 cs_transition_3 cs_white_bg cs_radius_20 cs_transform_up_hover_3">
+                                <div class="cs_blog_in">
+                                    <div class="cs_blog_thumbnail cs_zoom">
+                                        <a href="{{ route('blog_read_post', $latest_posts->slug) }}">
+                                            <img class="cs_zoom_in w-100"
+                                                src="{{ $latest_posts->featured_image ? '/images/posts/resized/resized_' . $latest_posts->featured_image : '/images/posts/resized/resized_noThumbnail.jpg' }}"
+                                                alt="blog_img">
+                                        </a>
+                                    </div>
+                                    <div class="cs_blog_info">
+                                        <h3 class="cs_blog_title cs_font_28"><a class="cs_accent_color_2_hover"
+                                                href="{{ route('blog_read_post', $latest_posts->slug) }}">{{ $latest_posts->title }}</a>
+                                        </h3>
+                                        <p class="cs_gradient_text">{!! Str::ucfirst(words($latest_posts->content, 100)) !!}</p>
+                                        <div class="cs_height_60 cs_height_lg_30"></div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="cs_blog_avater d-flex align-items-center">
+                                                {{-- <img src="{{ $latest_posts->author->picture }}" alt="avatar_img"> --}}
+                                                <a
+                                                    href="{{ route('blog_author_posts', $latest_posts->author->username) }}">
+                                                    <img src="{{ $latest_posts->author->picture }}" alt="avatar_img"
+                                                        style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%; border: 2px solid #d1d5db; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out;"
+                                                        onmouseover="this.style.boxShadow='4px 4px 12px rgba(0, 0, 0, 0.2)'"
+                                                        onmouseout="this.style.boxShadow='2px 2px 8px rgba(0, 0, 0, 0.1)'">
+                                                </a>
+                                                <div class="cs_ml_20">
+                                                    <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-1">
+                                                        <i class="fa-solid fa-user-tie"></i>
+                                                        <a
+                                                            href="{{ route('blog_author_posts', $latest_posts->author->username) }}">
+                                                            {{ $latest_posts->author->name }}
+                                                        </a>
+                                                    </h2>
+                                                    <p class="cs_blog_designation cs_font_16 cs_bold mb-0"
+                                                        style="font-size: 12px;">
+                                                        <i class="fa-regular fa-calendar-days"></i>
+                                                        {{ date_formatter($latest_posts->created_at) }} &nbsp;
+                                                        Category:
+                                                        <a
+                                                            href="{{ route('blog_category_posts', $latest_posts->post_category->slug) }}">
+                                                            <span
+                                                                class="cs_gradient_text">{{ $latest_posts->post_category->slug }}</span>
+                                                        </a>&nbsp;
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        {{ readDuration($latest_posts->title, $latest_posts->content) }}
+                                                        @choice('min|mins', readDuration($latest_posts->title, $latest_posts->content))
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="{{ route('blog_read_post', $latest_posts->slug) }}"
+                                                class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle"
+                                                title="{!! Str::ucfirst(words($latest_posts->content, 25)) !!}">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
+
+                    @if (!empty(latest_posts(1, 2)))
+                        @foreach (latest_posts(1, 2) as $item)
+                            <div class="cs_blog cs_style_2 cs_transition_4">
+                                <a href="{{ route('blog_read_post', $item->slug) }}" class="cs_blog_thumbnail cs_zoom">
+                                    <img class="cs_zoom_in"
+                                        src="{{ $item->featured_image ? '/images/posts/resized/thumb_' . $item->featured_image : '/images/posts/resized/resized_noThumbnail.jpg' }}"
+                                        alt="Post Thumbnail">
+                                </a>
+                                <div class="cs_blog_info">
+                                    <h2 class="cs_blog_title cs_font_20 cs_semi_bold"><a class="cs_accent_color_2_hover"
+                                            href="{{ route('blog_read_post', $item->slug) }}">{{ $item->title }}</a>
+                                    </h2>
+                                    <p class="cs_gradient_text">{!! Str::ucfirst(words($latest_posts->content, 100)) !!}</p>
+                                    <div class="cs_blog_avater d-flex align-items-center">
+                                        {{-- <img src="/front/assets/img/blog/a3.png" alt="avatar_img"> --}}
+                                        <a href="{{ route('blog_author_posts', $item->author->username) }}">
+                                            <img src="{{ $item->author->picture }}" alt="avatar_img"
+                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%; border: 2px solid #d1d5db; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out;"
+                                                onmouseover="this.style.boxShadow='4px 4px 12px rgba(0, 0, 0, 0.2)'"
+                                                onmouseout="this.style.boxShadow='2px 2px 8px rgba(0, 0, 0, 0.1)'">
+                                        </a>
+                                        <div class="cs_ml_20">
+                                            <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-1">
+                                                <i class="fa-solid fa-user-tie"></i>
+                                                <a href="{{ route('blog_author_posts', $item->author->username) }}">
+                                                    {{ $item->author->name }}
+                                                </a>
+                                            </h2>
+                                            <p class="cs_blog_designation cs_font_16 cs_bold mb-0"
+                                                style="font-size: 10px;">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                {{ date_formatter($item->created_at) }} &nbsp;
+                                                Category:
+                                                <a href="{{ route('blog_category_posts', $item->post_category->slug) }}">
+                                                    <span class="cs_gradient_text">{{ $item->post_category->slug }}</span>
+                                                </a>&nbsp;
+                                                <i class="fa-regular fa-clock"></i>
+                                                {{ readDuration($item->title, $item->content) }}
+                                                @choice('min|mins', readDuration($item->title, $item->content))
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="{{ route('blog_category_posts', $item->post_category->slug) }}"
+                                        class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle"
+                                        title="{!! Str::ucfirst(words($item->content, 20)) !!}">
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
+            </div>
+            <div class="cs_height_150 cs_height_lg_80"></div>
+        </section>
+        <!-- End Blog Section -->
 
         <!-- Start Portfolio Section -->
         <section class="cs_filled_bg cs_100_bg" data-src="/front/assets/img/bg/protfolio_bg2.png">
@@ -683,190 +815,6 @@
             <div class="cs_height_125 cs_height_lg_55"></div>
         </section>
         <!-- End Testimonial Section -->
-
-        <!-- Start Blog Section -->
-        <section class="cs_filled_bg" data-src="/front/assets/img/bg/blog_bg_2.png">
-            <div class="cs_height_145 cs_height_lg_75"></div>
-            <div class="container">
-                <div class="d-md-flex justify-content-between">
-                    <div class="cs_section_heading cs_style_1">
-                        <p class="cs_section_subtitle cs_accent_color_2 cs_font_16 wow fadeInLeft"
-                            data-wow-duration="0.8s" data-wow-delay="0.2s">
-                            <span>Blog Posts</span>
-                            <svg width="17" height="21" viewBox="0 0 17 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M11.1794 0.136775C10.2881 0.345851 9.66098 0.907053 8.49451 2.56862C8.16439 3.04177 7.83427 3.42691 7.75723 3.42691C7.52618 3.42691 6.88797 3.82302 6.63489 4.37322C6.50283 4.65937 6.24975 5.03346 6.07372 5.22054C5.45753 6.02382 6.2938 6.05681 4.88531 7.87246C2.75059 10.6454 1.89221 12.0209 1.81517 12.7691C1.72715 13.6935 0.186681 18.6012 0.494775 19.4485C0.703801 20.0427 1.40809 20.1637 2.43144 19.8556C4.26904 19.3054 7.55926 16.8846 8.1865 16.3454C8.98977 15.6521 11.2455 11.6688 11.5206 11.6578C11.8287 11.6467 12.4669 11.3386 12.577 11.2286C13.0832 10.7224 14.5247 8.2906 14.6567 7.66336C14.7117 7.39931 14.6346 7.15721 14.6346 6.84911C14.6346 6.66203 14.9098 6.23292 15.449 5.56163C16.5273 4.23018 16.5383 4.19719 15.9001 2.87671C14.7557 0.576917 13.2152 -0.325383 11.1794 0.136775ZM12.621 0.686965C13.5673 0.918049 14.4697 1.71033 15.0088 2.7557C15.526 3.77906 15.4269 4.03213 13.7434 6.08989C13.6994 6.13385 13.5673 5.84779 13.3693 5.55066C12.6099 4.38427 11.3555 3.53695 9.67195 3.36092C9.02277 3.29485 8.86868 3.54792 10.0021 2.00745C10.3983 1.46824 10.6293 1.17113 10.8053 0.984064C11.1025 0.686965 11.7407 0.477898 12.621 0.686965ZM10.0461 4.14217C11.5756 4.63735 12.1148 4.95641 13.0061 6.61798C13.5783 7.68538 13.5233 7.56437 12.8741 8.34562C12.6209 8.65371 12.599 8.65371 12.5219 8.45566C12.2579 7.71838 12.0378 7.32227 11.4106 6.71705C10.2551 5.72669 9.93608 5.99082 10.8714 7.06919C11.9387 8.31262 12.1588 9.02788 11.7517 9.95216C11.5096 10.4914 11.3335 10.6784 11.2785 10.4473C10.5853 7.88344 9.05577 6.79409 7.33918 6.64C6.62392 6.57401 6.52485 6.40895 6.92104 5.9688C7.16307 5.70467 7.51521 5.82576 8.3735 5.9358C8.75864 5.99082 8.78067 5.46265 8.35148 5.35261C7.79031 5.20949 7.60322 5.02249 8.03233 4.36225C8.42852 3.77906 8.80269 3.73501 10.0461 4.14217ZM9.01172 4.67034C8.80269 4.80241 8.74759 5.07751 9.46284 5.33058C10.1451 5.57269 10.4973 5.39657 10.4973 5.08848C10.4973 4.96747 10.4092 4.78038 10.1121 4.71439C9.716 4.61532 9.13281 4.5933 9.01172 4.67034ZM7.93334 7.32227C8.05435 7.39931 8.06541 7.41028 7.65824 8.0155C6.65692 9.50104 6.24975 10.0732 5.95263 10.4143C5.78757 10.6014 5.41348 11.1626 5.11636 11.6578C4.159 13.2864 3.32281 13.8036 2.95962 12.9892C2.82763 12.7032 2.86055 12.373 3.02561 12.1199C3.49876 11.3937 6.06275 7.35526 6.68991 7.1902C7.20711 7.04717 7.74626 7.20126 7.93334 7.32227ZM9.22082 7.97145C10.0351 8.81877 10.1451 9.358 9.50689 10.1392C8.31848 11.6028 6.44781 14.1226 5.69955 14.6618C5.1934 15.025 4.9513 13.9685 5.09442 13.3084C5.28142 12.417 6.02967 11.2176 7.68027 9.04991C8.62658 7.78445 8.79164 7.53138 9.22082 7.97145ZM10.3542 10.6894C10.3872 10.9315 10.5193 11.2616 10.2551 11.6248C10.0681 11.8888 9.46284 12.8902 8.97872 13.6934C8.14245 15.1019 7.04206 16.0373 6.95404 15.7952C6.844 15.4981 7.47116 14.0896 8.05435 13.2864C9.51786 11.3167 10.2111 9.72112 10.3542 10.6894ZM4.23604 14.2106C4.26904 15.08 4.78624 15.4541 5.64453 15.223C6.19473 15.08 6.19473 15.0689 5.97465 15.5861C5.87567 15.8172 5.82065 16.1473 5.84259 16.3234C5.89761 16.6756 5.7766 16.7195 4.92936 17.2588C4.80827 17.3357 4.65418 17.3027 4.57722 17.1817C4.13706 16.5104 3.52078 16.1693 2.82755 16.0593C2.13432 15.9492 2.17837 16.0703 2.38739 14.9699L2.5635 14.0346C2.70654 14.0346 3.23471 14.1556 3.72989 13.9355C3.939 13.8475 4.15908 13.7595 4.15908 13.7595C4.15908 13.7595 4.23604 13.9685 4.23604 14.2106Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </p>
-                        <h2 class="cs_section_title cs_font_48 cs_semi_bold">My latest <span
-                                class="cs_accent_color">articles</span>
-                        </h2>
-                    </div>
-                    <div class="align-self-end">
-                        <div class="cs_height_25 cs_height_lg_25"></div>
-                        <a class="d-inline-flex cs_gap_15 align-items-center text-uppercase cs_letter_spacing_15 cs_font_16 cs_accent_color"
-                            href="{{ route('blog') }}">
-                            <span class="cs_text_btn">View All Post</span>
-                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="cs_height_70 cs_height_lg_30"></div>
-                <div class="cs_blog_group_1">
-                    @if (!empty(latest_posts(0, 1)))
-                        @foreach (latest_posts(0, 1) as $latest_posts)
-                            <div
-                                class="cs_blog cs_style_3 cs_transition_3 cs_white_bg cs_radius_20 cs_transform_up_hover_3">
-                                <div class="cs_blog_in">
-                                    <div class="cs_blog_thumbnail cs_zoom">
-                                        <a href="{{ route('blog_read_post', $latest_posts->slug) }}">
-                                            <img class="cs_zoom_in w-100"
-                                                src="{{ $latest_posts->featured_image ? '/images/posts/resized/resized_' . $latest_posts->featured_image : '/images/posts/resized/resized_noThumbnail.jpg' }}"
-                                                alt="blog_img">
-                                        </a>
-                                    </div>
-                                    <div class="cs_blog_info">
-                                        <h3 class="cs_blog_title cs_font_28"><a class="cs_accent_color_2_hover"
-                                                href="{{ route('blog_read_post', $latest_posts->slug) }}">{{ $latest_posts->title }}</a>
-                                        </h3>
-                                        <p class="cs_gradient_text">{!! Str::ucfirst(words($latest_posts->content, 100)) !!}</p>
-                                        <div class="cs_height_60 cs_height_lg_30"></div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="cs_blog_avater d-flex align-items-center">
-                                                {{-- <img src="{{ $latest_posts->author->picture }}" alt="avatar_img"> --}}
-                                                <a
-                                                    href="{{ route('blog_author_posts', $latest_posts->author->username) }}">
-                                                    <img src="{{ $latest_posts->author->picture }}" alt="avatar_img"
-                                                        style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%; border: 2px solid #d1d5db; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out;"
-                                                        onmouseover="this.style.boxShadow='4px 4px 12px rgba(0, 0, 0, 0.2)'"
-                                                        onmouseout="this.style.boxShadow='2px 2px 8px rgba(0, 0, 0, 0.1)'">
-                                                </a>
-                                                <div class="cs_ml_20">
-                                                    <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-1">
-                                                        <i class="fa-solid fa-user-tie"></i>
-                                                        <a
-                                                            href="{{ route('blog_author_posts', $latest_posts->author->username) }}">
-                                                            {{ $latest_posts->author->name }}
-                                                        </a>
-                                                    </h2>
-                                                    <p class="cs_blog_designation cs_font_16 cs_bold mb-0"
-                                                        style="font-size: 12px;">
-                                                        <i class="fa-regular fa-calendar-days"></i>
-                                                        {{ date_formatter($latest_posts->created_at) }} &nbsp;
-                                                        Category:
-                                                        <a
-                                                            href="{{ route('blog_category_posts', $latest_posts->post_category->slug) }}">
-                                                            <span
-                                                                class="cs_gradient_text">{{ $latest_posts->post_category->slug }}</span>
-                                                        </a>&nbsp;
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        {{ readDuration($latest_posts->title, $latest_posts->content) }}
-                                                        @choice('min|mins', readDuration($latest_posts->title, $latest_posts->content))
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <a href="{{ route('blog_read_post', $latest_posts->slug) }}"
-                                                class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle"
-                                                title="{!! Str::ucfirst(words($latest_posts->content, 25)) !!}">
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    @endif
-
-                    @if (!empty(latest_posts(1, 3)))
-                        @foreach (latest_posts(1, 3) as $item)
-                            <div class="cs_blog cs_style_2 cs_transition_4">
-                                <a href="{{ route('blog_read_post', $item->slug) }}" class="cs_blog_thumbnail cs_zoom">
-                                    <img class="cs_zoom_in"
-                                        src="{{ $latest_posts->featured_image ? '/images/posts/resized/thumb_' . $latest_posts->featured_image : '/images/posts/resized/resized_noThumbnail.jpg' }}"
-                                        alt="">
-                                </a>
-                                <div class="cs_blog_info">
-                                    <h2 class="cs_blog_title cs_font_20 cs_semi_bold"><a class="cs_accent_color_2_hover"
-                                            href="{{ route('blog_read_post', $item->slug) }}">{{ $item->title }}</a>
-                                    </h2>
-                                    <p class="cs_gradient_text">{!! Str::ucfirst(words($latest_posts->content, 100)) !!}</p>
-                                    <div class="cs_blog_avater d-flex align-items-center">
-                                        {{-- <img src="/front/assets/img/blog/a3.png" alt="avatar_img"> --}}
-                                        <a href="{{ route('blog_author_posts', $item->author->username) }}">
-                                            <img src="{{ $item->author->picture }}" alt="avatar_img"
-                                                style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%; border: 2px solid #d1d5db; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease-in-out;"
-                                                onmouseover="this.style.boxShadow='4px 4px 12px rgba(0, 0, 0, 0.2)'"
-                                                onmouseout="this.style.boxShadow='2px 2px 8px rgba(0, 0, 0, 0.1)'">
-                                        </a>
-                                        <div class="cs_ml_20">
-                                            <h2 class="cs_blog_name cs_font_20 cs_semi_bold mb-1">
-                                                <i class="fa-solid fa-user-tie"></i>
-                                                <a href="{{ route('blog_author_posts', $item->author->username) }}">
-                                                    {{ $item->author->name }}
-                                                </a>
-                                            </h2>
-                                            <p class="cs_blog_designation cs_font_16 cs_bold mb-0"
-                                                style="font-size: 10px;">
-                                                <i class="fa-regular fa-calendar-days"></i>
-                                                {{ date_formatter($item->created_at) }} &nbsp;
-                                                Category:
-                                                <a href="{{ route('blog_category_posts', $item->post_category->slug) }}">
-                                                    <span class="cs_gradient_text">{{ $item->post_category->slug }}</span>
-                                                </a>&nbsp;
-                                                <i class="fa-regular fa-clock"></i>
-                                                {{ readDuration($item->title, $item->content) }}
-                                                @choice('min|mins', readDuration($item->title, $item->content))
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="{{ route('blog_category_posts', $item->post_category->slug) }}"
-                                        class="cs_circle_btn cs_style_1 cs_type_1 cs_accent_color_2 cs_center rounded-circle"
-                                        title="{!! Str::ucfirst(words($item->content, 20)) !!}">
-                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 10L10 1" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M1 1H10V10" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        @endforeach
-                    @endif
-
-
-
-                </div>
-            </div>
-            <div class="cs_height_150 cs_height_lg_80"></div>
-        </section>
-        <!-- End Blog Section -->
 
         <!-- Start Brand Section -->
         <section>

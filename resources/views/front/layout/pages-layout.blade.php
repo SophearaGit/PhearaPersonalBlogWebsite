@@ -42,27 +42,21 @@
                                 <li class="{{ Route::is(['home', '']) ? 'active' : '' }} menu-item-has-children"><a
                                         href="{{ route('home') }}">Home</a>
                                 </li>
-                                <li class="menu-item-has-children"><a href="about.html">About</a>
-                                    <ul>
-                                        <li><a href="about.html">Designer About</a></li>
-                                        <li><a href="about-v2.html">Developer About</a></li>
-                                    </ul>
+                                <li class=" {{ Route::is(['about', '']) ? 'active' : '' }} menu-item-has-children"><a
+                                        href="{{ route('about') }}">About</a>
                                 </li>
                                 {{-- for the dynamic li --}}
                                 {!! navigations() !!}
-                                <li class="menu-item-has-children"><a href="portfolio.html">Portfolio</a>
-                                    <ul>
-                                        <li><a href="portfolio.html">Portfolio</a></li>
-                                        <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                    </ul>
+                                <li class=" {{ Route::is(['portfolio', '']) ? 'active' : '' }} menu-item-has-children">
+                                    <a href="{{ route('portfolio') }}">Portfolio</a>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Pages</a>
+                                {{-- <li class="menu-item-has-children"><a href="#">Pages</a>
                                     <ul>
                                         <li><a href="testimonial.html">Testimonial</a></li>
                                         <li><a href="faq.html">FAQ</a></li>
                                         <li><a href="404.html">Error 404</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="menu-item-has-children {{ Route::is(['blog', '']) ? 'active' : '' }}"><a
                                         href="{{ route('blog') }}">Blog</a></li>
                                 <li> <a href="{{ route('contact') }}">Contact</a></li>

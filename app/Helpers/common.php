@@ -4,10 +4,10 @@ use App\Models\GeneralSetting;
 use App\Models\ParentCategory;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\UserSocialLink;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-
 
 
 /**
@@ -17,6 +17,16 @@ if (!function_exists('user')) {
     function user()
     {
         return AUTH::user();
+    }
+}
+
+/**
+ * Fetch user social links
+ */
+if (!function_exists('social_links')) {
+    function social_links($user_id)
+    {
+        return UserSocialLink::where('user_id', $user_id)->first();
     }
 }
 

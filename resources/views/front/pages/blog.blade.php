@@ -88,10 +88,10 @@
                         <div class="cs_blog_wrap">
                             @if (!empty(latest_posts(0, 6)))
                                 @foreach (latest_posts(0, 6) as $item)
-                                    <div class="cs_blog cs_style_1 cs_transition_4">
+                                    <div class="cs_blog cs_style_2 cs_transition_4">
                                         <div class="flex-none">
                                             <a href="blog-details.html" class="cs_blog_thumbnail cs_zoom">
-                                                <img class="cs_zoom_in "
+                                                <img class="cs_zoom_in"
                                                     src="{{ $item->featured_image ? asset('images/posts/resized/resized_' . $item->featured_image) : asset('/images/default/funntmr.jpg') }}"
                                                     alt="">
                                             </a>

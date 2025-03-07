@@ -171,12 +171,14 @@
                     @if ($posts->count())
                         @foreach ($posts as $item)
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                                <div class="cs_brand_logo_wrap cs_center cs_brand_bg_1"
+                                {{-- <div class="cs_brand_logo_wrap cs_center cs_brand_bg_1"
                                     style="overflow: hidden; position: relative;">
                                     <img class="cs_brand_logo"
                                         src="/images/posts/resized/resized_{{ $item->featured_image }}" alt=""
                                         style="width: 100%; height: auto; object-fit: contain; display: block;">
-                                </div>
+                                </div> --}}
+                                <img class="cs_brand_logo" src="/images/posts/resized/resized_{{ $item->featured_image }}"
+                                    alt="">
                                 <p class="m-0 cs_white_bg cs_font_10 cs_semi_bold"> {{ $item->title }} </p>
                                 <p class="m-0 cs_white_bg"><i class="fa-solid fa-calendar-days"></i>
                                     {{ date_formatter($item->created_at) }} </p>
