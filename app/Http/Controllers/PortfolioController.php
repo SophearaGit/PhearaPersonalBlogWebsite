@@ -95,6 +95,14 @@ class PortfolioController extends Controller
 
     }
 
+    public function allPortfolios(Request $request)
+    {
+        $data = [
+            'pageTitle' => 'Portfolios',
+        ];
+        return view('back.page.all_portfolio', $data);
+    }
+
 
 
 
