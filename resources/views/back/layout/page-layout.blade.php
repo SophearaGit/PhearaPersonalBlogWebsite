@@ -394,13 +394,18 @@
                         </ul>
                     </li>
                     @if (auth()->user()->type == 'super_admin')
-                        <li class="dropdown">
+                        <li
+                            class="dropdown {{ Route::is('admin.add_portfolio') || Route::is('admin.portfolios') || Route::is('admin.edit_portfolio') ? 'active' : '' }} ">
                             <a href="javascript:;" class="dropdown-toggle">
-                                <span class="micon fa fa-shopping-bag"></span><span class="mtext">Shop</span>
+                                {{-- <i class="icon-copy fa fa-archive" aria-hidden="true"></i> --}}
+                                <span class="micon fa fa-archive"></span><span class="mtext">Portfolio</span>
                             </a>
                             <ul class="submenu">
-                                <li><a href="">New product</a></li>
-                                <li><a href="">All products</a></li>
+                                <li><a href="{{ route('admin.add_portfolio') }}"
+                                        class="{{ Route::is('admin.add_portfolio') ? 'active' : '' }}">New</a></li>
+                                <li><a href="{{ route('admin.portfolios') }}"
+                                        class="{{ Route::is('admin.portfolios') ? 'active' : '' }}">Portfolios</a>
+                                </li>
                             </ul>
                         </li>
                     @endif

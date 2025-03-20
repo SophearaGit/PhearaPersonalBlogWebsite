@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\BlogContoller;
+use App\Http\Controllers\PortfolioController;
 
 /**
  * FRONTEND ROUTES INDEX
@@ -73,6 +74,15 @@ Route::prefix('admin')->name('admin.')->group(function () {
             Route::get('/post/{id}/edit', action: 'editPost')->name('edit_post');
             Route::post('/post/update', action: 'updatePost')->name('update_post');
         });
+
+        Route::controller(PortfolioController::class)->group(function () {
+            Route::get('/portfolio/new', 'addPortfolio')->name('add_portfolio');
+            Route::post('/portfolio/create', 'createPortfolio')->name('create_portfolio');
+            Route::get('/portfolio', action: 'allPortfolios')->name('portfolios');
+            Route::get('/portfolio/{id}/edit', action: 'editPortfolio')->name('edit_portfolio');
+            Route::post('/portfolio/update', action: 'updatePortfolio')->name('update_portfolio');
+        });
+
 
 
 

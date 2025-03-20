@@ -15,7 +15,7 @@ class Posts extends Component
 
     use WithPagination;
 
-    public $perPage = 5;
+    public $perPage = 10;
     public $category_html;
 
     public $search = null;
