@@ -68,7 +68,7 @@ if (!function_exists('navigations')) {
             ';
             foreach ($pcategories as $item) {
                 $navigation_html .= '
-                            <li><a href="' . route('blog_category_posts', $item->slug) . '">' . $item->name . '</a>
+                            <li><a href="#!">' . $item->name . '</a>
                                 <ul>
                                     <li>
                 ';

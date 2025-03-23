@@ -18,18 +18,20 @@
                         <h3 class="cs_font_48 cs_semi_bold mb-0">I'm currently working as a.<span class="cs_accent_color">
                                 freelancer</span></h3>
                         <div class="cs_height_20 cs_height_lg_10"></div>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                            ridiculus
-                            mus.
+                        <p class="mb-0">
+                            👋 Hey there! I'm a Full-Stack Laravel Developer who loves crafting clean, scalable, and
+                            high-performing web applications. I turn complex ideas into smooth, user-friendly
+                            experiences—whether it’s a dynamic dashboard, an e-commerce platform, or a learning management
+                            system like Udemy.
                         </p>
                         <div class="cs_height_lg_15"></div>
                     </div>
                     <div class="col-lg-5 offset-lg-1 align-self-end">
                         <p class="mb-0">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean
-                            massa. Cum sociis natoque penatibus et magnis
+                            I don’t just write code—I build experiences. I mix creativity with functionality,
+                            ensuring every project isn’t just technically sound but also visually stunning and
+                            user-friendly. I thrive on challenges, and if you throw a complex problem my way, I’ll crack it
+                            with clean code and good humor.
                         </p>
                     </div>
                 </div>
@@ -39,7 +41,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="cs_image_box cs_radius_20 overflow-hidden">
-                            <img class="w-100" src="/front/assets/img/hero/hero_about_1.jpg" alt="">
+                            <img class="w-100" src="/images/users/mySuitPic.jpg" alt="">
                         </div>
                         <div class="cs_height_lg_30"></div>
                     </div>
@@ -49,35 +51,43 @@
                             <ul class="cs_mp_0 cs_about_summary_list">
                                 <li>
                                     <p class="m-0 text-capitalize">Nickname</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">John</h5>
+                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInRight" data-wow-duration="0.8s"
+                                        data-wow-delay="0.2s">Sopheara / Raa</h5>
                                 </li>
                                 <li>
                                     <p class="m-0 text-capitalize">Nationality</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">American</h5>
+                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.2s">Cambodian</h5>
                                 </li>
                                 <li>
                                     <p class="m-0 text-capitalize">Current Location</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">Deer Trail, CO 80105, United States</h5>
+                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInRight" data-wow-duration="0.8s"
+                                        data-wow-delay="0.2s">Chrouy Changvar, Phnom Penh, Phnom Penh</h5>
                                 </li>
                                 <li>
                                     <p class="m-0 text-capitalize">Education</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">MBA in Computer Science Engineering</h5>
+                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.2s">Norton University in Softwar Engineering</h5>
                                 </li>
                                 <li>
                                     <p class="m-0 text-capitalize">Hobby</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">Gardening</h5>
+                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInRight" data-wow-duration="0.8s"
+                                        data-wow-delay="0.2s">
+                                        Coding, Reasearch, etc...
+                                    </h5>
                                 </li>
                                 <li>
                                     <p class="m-0 text-capitalize">Interests</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold">Traveling, Cricket, Football, Design, Reading
+                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInLeft" data-wow-duration="0.8s"
+                                        data-wow-delay="0.2s">Traveling, Cricket, Football, Design, Reading
                                         Book,
                                         Cooking,
                                         Biking, Excercise</h5>
                                 </li>
                                 <li>
                                     <p class="m-0 text-capitalize">email</p>
-                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInLeft" data-wow-duration="0.8s"
-                                        data-wow-delay="0.2s">name@gmail.com</h5>
+                                    <h5 class="cs_font_20 m-0 cs_semi_bold wow fadeInRight" data-wow-duration="0.8s"
+                                        data-wow-delay="0.2s">sethsopheara@gmail.com</h5>
                                 </li>
                             </ul>
                         </div>
@@ -146,8 +156,9 @@
                                     </svg>
                                 </div>
                                 <div class="cs_iconbox_info">
-                                    <p class="cs_iconbox_text mb-0">Harvard University</p>
-                                    <h3 class="cs_iconbox_title cs_font_24 cs_semi_bold mb-0">MBA in CSE (2015 - 2016)</h3>
+                                    <p class="cs_iconbox_text mb-0">Major in Software Engineering</p>
+                                    <h3 class="cs_iconbox_title cs_font_24 cs_semi_bold mb-0">Norton University (2021 -
+                                        PRESENT)</h3>
                                 </div>
                             </div>
                             <div class="cs_iconbox cs_style_3 cs_type_1 d-flex align-items-center">
@@ -161,8 +172,10 @@
                                     </svg>
                                 </div>
                                 <div class="cs_iconbox_info">
-                                    <p class="cs_iconbox_text mb-0">Harvard University</p>
-                                    <h3 class="cs_iconbox_title cs_font_24 cs_semi_bold mb-0">B.Sc in CSE(2010 - 2014)</h3>
+                                    <p class="cs_iconbox_text mb-0">Finished High school</p>
+                                    <h3 class="cs_iconbox_title cs_font_24 cs_semi_bold mb-0">Chea SimChroy Changvar (2014
+                                        -
+                                        2020)</h3>
                                 </div>
                             </div>
                             <div class="cs_iconbox cs_style_3 cs_type_1 d-flex align-items-center">
@@ -176,9 +189,9 @@
                                     </svg>
                                 </div>
                                 <div class="cs_iconbox_info">
-                                    <p class="cs_iconbox_text mb-0">Harvard University</p>
-                                    <h3 class="cs_iconbox_title cs_font_24 cs_semi_bold mb-0">Secondary School (2002 -
-                                        2009)
+                                    <p class="cs_iconbox_text mb-0">Finished English level 12</p>
+                                    <h3 class="cs_iconbox_title cs_font_24 cs_semi_bold mb-0">Sovannaphumi School (2014 -
+                                        2020)
                                     </h3>
                                 </div>
                             </div>
@@ -186,8 +199,47 @@
                         <div class="cs_height_lg_40"></div>
                     </div>
                     <div class="col-lg-6">
+                        <div class="cs_slill_wrap cs_pl_70 mb-5">
+                            <h3 class="cs_font_36 mb-0">Hard Skills</h3>
+                            <div class="cs_height_25 cs_height_lg_15"></div>
+                            <div class="cs_progressbar cs_style_2">
+                                <div class="label cs_font_20 cs_semi_bold">PHP with Laravel</div>
+                                <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">95%</h3>
+                                <div class="cs_progress" data-progress="95">
+                                    <div class="cs_progress_in"></div>
+                                </div>
+                            </div>
+                            <div class="cs_progressbar cs_style_2">
+                                <div class="label cs_font_20 cs_semi_bold">Node.js with Express</div>
+                                <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">55%</h3>
+                                <div class="cs_progress" data-progress="55">
+                                    <div class="cs_progress_in"></div>
+                                </div>
+                            </div>
+                            <div class="cs_progressbar cs_style_2">
+                                <div class="label cs_font_20 cs_semi_bold">HTML, CSS, Bootstrap</div>
+                                <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">90%</h3>
+                                <div class="cs_progress" data-progress="90">
+                                    <div class="cs_progress_in"></div>
+                                </div>
+                            </div>
+                            <div class="cs_progressbar cs_style_2">
+                                <div class="label cs_font_20 cs_semi_bold">JavaScript / jQuery</div>
+                                <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">75%</h3>
+                                <div class="cs_progress" data-progress="75">
+                                    <div class="cs_progress_in"></div>
+                                </div>
+                            </div>
+                            {{-- <div class="cs_progressbar cs_style_2">
+                                <div class="label cs_font_20 cs_semi_bold">Algorithm & Data Structure</div>
+                                <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">75%</h3>
+                                <div class="cs_progress" data-progress="75">
+                                    <div class="cs_progress_in"></div>
+                                </div>
+                            </div> --}}
+                        </div>
                         <div class="cs_slill_wrap cs_pl_70">
-                            <h3 class="cs_font_36 mb-0">Slills</h3>
+                            <h3 class="cs_font_36 mb-0">Soft Skills</h3>
                             <div class="cs_height_25 cs_height_lg_15"></div>
                             <div class="cs_progressbar cs_style_2">
                                 <div class="label cs_font_20 cs_semi_bold">Communication</div>
@@ -210,13 +262,13 @@
                                     <div class="cs_progress_in"></div>
                                 </div>
                             </div>
-                            <div class="cs_progressbar cs_style_2">
+                            {{-- <div class="cs_progressbar cs_style_2">
                                 <div class="label cs_font_20 cs_semi_bold">Algorithm & Data Structure</div>
                                 <h3 class="cs_progressbar_head cs_ternary_color cs_normal cs_font_14 text-end">75%</h3>
                                 <div class="cs_progress" data-progress="75">
                                     <div class="cs_progress_in"></div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

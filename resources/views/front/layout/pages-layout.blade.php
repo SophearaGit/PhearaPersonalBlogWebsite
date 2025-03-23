@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="cs_main_header_in">
                     <div class="cs_main_header_left">
-                        <a class="cs_site_branding" href="home-v2.html">
+                        <a class="cs_site_branding" href="{{route('home')}}">
                             {{-- <img src="/images/site/{{ isset(settings()->site_logo) ? settings()->site_logo : 'Sopheara' }}"
                                 alt="Logo"> --}}
                             <span class="cs_gradient_text">👨RADODEV</span>

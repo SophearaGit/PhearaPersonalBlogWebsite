@@ -138,18 +138,10 @@
                                     for your <span class="cs_accent_color_2">next project?</span></h2>
                             </div>
                             <div class="cs_height_40 cs_height_lg_30"></div>
-                            <p class="m-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula eget dolor.
-                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                ridiculus mus.
-                                Donec
-                                quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                                quis enim. Donec
-                                pede
-                                justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-                                imperdiet a,
-                                venenatis
-                                vitae, justo. </p>
+                            <p class="m-0">Hiring me means bringing on board a dedicated and skilled Laravel full-stack
+                                developer who is not only technically proficient but also committed to contributing
+                                positively to the team and the company's goals. I am eager to leverage my skills to create
+                                innovative solutions that drive business success. </p>
                             <div class="cs_height_25 cs_height_lg_20"></div>
                             <a class="cs_btn cs_style_1" href="{{ route('contact') }}"><span>Hire Me</span></a>
                         </div>
@@ -164,7 +156,9 @@
                                     </div>
                                     <div class="cs_iconbox_info position-relative w-100">
                                         <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Front-end</h3>
-                                        <p class="cs_iconbox_text">Lorem ipsum dolor sit amet, consectetuer</p>
+                                        <p class="cs_iconbox_text">
+                                            View all my project base on front-ent.
+                                        </p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span
                                                 class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">190
@@ -197,7 +191,7 @@
                                     </div>
                                     <div class="cs_iconbox_info position-relative w-100">
                                         <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Back-end</h3>
-                                        <p class="cs_iconbox_text">Lorem ipsum dolor sit amet, consectetuer</p>
+                                        <p class="cs_iconbox_text">View all my project base on back-end.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span
                                                 class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">228

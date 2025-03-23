@@ -26,7 +26,10 @@ class DatabaseSeeder extends Seeder
             UserSocialLinkSeeder::class,
             PostSeeder::class,
             PorfolioSeeder::class,
+            GeneralSettingSeeder::class,
         ]);
 
     }
 }
+
+
