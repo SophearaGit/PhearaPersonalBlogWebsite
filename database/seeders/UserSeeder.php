@@ -26,6 +26,7 @@ class UserSeeder extends Seeder
             'password' => Hash::make('12345678'),
             'type' => UserType::SUPER_ADMIN,
             'status' => UserStatus::ACTIVE,
+            'picture' => 'IMG_67dd799450f9c.png',
         ]);
     }
 }

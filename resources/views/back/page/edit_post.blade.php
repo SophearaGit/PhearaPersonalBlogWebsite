@@ -32,7 +32,7 @@
                 <div class="card card-box mb-2">
                     <div class="card-body">
                         <div class="form-group">
-                            <label for=""><b>Titlejfjfj</b></label>
+                            <label for=""><b>Title</b></label>
                             <input type="text" class="form-control" name="title" placeholder="Enter post title"
                                 value="{{ $post->title }}">
                             <span class="text-danger error-text title_error"></span>
