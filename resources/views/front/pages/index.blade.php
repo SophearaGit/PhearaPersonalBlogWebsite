@@ -464,109 +464,75 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cs_isotop_item">
-                        <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
-                            <div class="cs_browser cs_style_1">
-                                <div class="cs_btns">
-                                    <span></span><span></span><span></span>
+
+                    @if (!empty(latest_portfolios(0, limit: 3)))
+                        @foreach (latest_portfolios(0, 3) as $latest_portfolios)
+                            <div class="cs_isotop_item">
+                                <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
+                                    <div class="cs_browser cs_style_1">
+                                        <div class="cs_btns">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="cs_input_filed w-100"></div>
+                                    </div>
+                                    <a href="{{ route('blog_read_portfolio', [$latest_portfolios->slug]) }}"
+                                        class="cs_portfolio_thumbnail cs_zoom">
+                                        <img class="cs_zoom_in w-100"
+                                            src="{{ 'images/portfolios/resized/thumb_' . $latest_portfolios->featured_image }}"
+                                            alt="">
+                                    </a>
+                                    <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
+                                        <h2 class="cs_font_28 cs_white_color cs_medium mb-0">
+                                            {{ $latest_portfolios->slug }}
+                                        </h2>
+                                        <a href="{{ route('blog_read_portfolio', [$latest_portfolios->slug]) }}"
+                                            class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium">
+                                            <span class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase">View
+                                                work</span>
+                                            <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
+                                            </svg>
+                                        </a>
+
+                                    </div>
                                 </div>
-                                <div class="cs_input_filed w-100"></div>
                             </div>
-                            <a href="portfolio-details.html" class="cs_portfolio_thumbnail cs_zoom">
-                                <img class="cs_zoom_in w-100" src="/front/assets/img/portfolio/p4.jpg" alt="">
-                            </a>
-                            <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
-                                <h2 class="cs_font_28 cs_white_color cs_medium mb-0">Second Project</h2>
-                                <a href="portfolio-details.html"
-                                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium">
-                                    <span class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase">View
-                                        work</span>
-                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cs_isotop_item">
-                        <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
-                            <div class="cs_browser cs_style_1">
-                                <div class="cs_btns">
-                                    <span></span><span></span><span></span>
-                                </div>
-                                <div class="cs_input_filed w-100"></div>
-                            </div>
-                            <a href="portfolio-details.html" class="cs_portfolio_thumbnail cs_zoom">
-                                <img class="cs_zoom_in w-100" src="/front/assets/img/portfolio/p5.jpg" alt="">
-                            </a>
-                            <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
-                                <h2 class="cs_font_28 cs_white_color cs_medium mb-0">First Project</h2>
-                                <a href="portfolio-details.html"
-                                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium">
-                                    <span class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase">View
-                                        work</span>
-                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cs_isotop_item">
-                        <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
-                            <div class="cs_browser cs_style_1">
-                                <div class="cs_btns">
-                                    <span></span><span></span><span></span>
-                                </div>
-                                <div class="cs_input_filed w-100"></div>
-                            </div>
-                            <a href="portfolio-details.html" class="cs_portfolio_thumbnail cs_zoom">
-                                <img class="cs_zoom_in w-100" src="/front/assets/img/portfolio/p6.jpg" alt="">
-                            </a>
-                            <div class="cs_portfolio_info w-100 cs_white_color cs_medium position-absolute">
-                                <h2 class="cs_font_28 cs_white_color cs_medium mb-0">Three Project</h2>
-                                <a href="portfolio-details.html"
-                                    class="cs_font_16 cs_white_color_hover d-inline-flex align-items-center cs_gap_15 cs_medium">
-                                    <span class="cs_text_btn cs_secondary_font cs_type_1 text-uppercase">View
-                                        work</span>
-                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0L5 4.5L0 9L0 0Z" fill="currentColor" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cs_isotop_item">
-                        <div class="cs_portfolio cs_style_2 text-center cs_radius_20 overflow-hidden wow fadeInUp"
-                            data-wow-duration="0.8s" data-wow-delay="0.2s">
-                            <a class="cs_portfolio_text_btn d-inline-flex cs_gap_25 align-items-center cs_font_24 cs_accent_color cs_semi_bold"
-                                href="portfolio.html">
-                                <span class="cs_text_btn">View All Project</span>
-                                <span class="cs_circle_btn cs_style_1 cs_accent_color cs_center rounded-circle">
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 14L14 1" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M1 1H14V14" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 14L14 1" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M1 1H14V14" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                        @endforeach
+                    @endif
+
+
                 </div>
             </div>
-            <div class="cs_height_150 cs_height_lg_80"></div>
+            <div class="cs_height_100 cs_height_lg_30"></div>
+
+            <div class="cs_portfolio cs_style_2 text-center cs_radius_20 overflow-hidden wow fadeInUp"
+                data-wow-duration="0.8s" data-wow-delay="0.2s"
+                style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <a class="cs_portfolio_text_btn d-inline-flex cs_gap_25 align-items-center cs_font_24 cs_accent_color cs_semi_bold"
+                    href="{{ route('portfolio') }}">
+                    <span class="cs_text_btn">View All Project</span>
+                    <span class="cs_circle_btn cs_style_1 cs_accent_color cs_center rounded-circle">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 14L14 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M1 1H14V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 14L14 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M1 1H14V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="cs_height_100 cs_height_lg_30"></div>
+
+            {{-- <div class="cs_height_150 cs_height_lg_80"></div> --}}
         </section>
         <!-- End Portfolio Section -->
 

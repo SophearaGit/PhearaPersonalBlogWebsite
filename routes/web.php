@@ -25,8 +25,7 @@ Route::get('/contact', [BlogContoller::class, 'contactPage'])->name('contact');
 Route::post('/contact', [BlogContoller::class, 'sendEmail'])->name('send_email');
 Route::get('/about', [BlogContoller::class, 'aboutPage'])->name('about');
 Route::get('/portfolio', [BlogContoller::class, 'portfolioPage'])->name('portfolio');
-
-
+Route::get('/blog/portfolio/{slug}', [BlogContoller::class, 'readPortfolio'])->name('blog_read_portfolio');
 
 
 
