@@ -4,6 +4,7 @@ use App\Models\GeneralSetting;
 use App\Models\ParentCategory;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\Portfolio;
 use App\Models\UserSocialLink;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
@@ -197,6 +198,16 @@ if (!function_exists('latest_posts')) {
     }
 }
 
+if (!function_exists('latest_portfolios')) {
+    function latest_portfolios($skip = 0, $limit = 3)
+    {
+        return Portfolio::orderBy('created_at', 'desc')
+            ->skip($skip)
+            ->limit($limit)
+            ->get();
+    }
+}
+
 if (!function_exists('paginated_latest_posts')) {
     function paginated_latest_posts($perPage = 5)
     {
@@ -206,6 +217,13 @@ if (!function_exists('paginated_latest_posts')) {
     }
 }
 
+if (!function_exists('paginated_latest_portfolios')) {
+    function paginated_latest_portfolios($perPage = 5)
+    {
+        return Portfolio::orderBy('created_at', 'desc')
+            ->paginate($perPage);
+    }
+}
 
 /**
  * LISTING CATEGORIES WITH NUMBER OF POSTS ON SIDEBAR param value of $limit = 8

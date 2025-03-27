@@ -14,16 +14,17 @@ return new class extends Migration {
             $table->id();
             $table->integer('author_id');
             $table->string('title');
+            $table->string('slug');
             $table->string('featured_image');
             $table->text('overview');
-            $table->string('strategy')->nullable();;
-            $table->string('project_type')->nullable();;
-            $table->string('client')->nullable();;
+            $table->string('strategy')->nullable();
+            $table->string('project_type')->nullable();
+            $table->string('client')->nullable();
             $table->text('content');
-            $table->text('project_challenge')->nullable();;
-            $table->text('design_research')->nullable();;
-            $table->text('design_approach')->nullable();;
-            $table->text('the_solution')->nullable();;
+            $table->text('project_challenge')->nullable();
+            $table->text('design_research')->nullable();
+            $table->text('design_approach')->nullable();
+            $table->text('the_solution')->nullable();
             $table->timestamps();
         });
     }

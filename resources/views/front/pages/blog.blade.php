@@ -86,8 +86,8 @@
                     <div class="col-lg-8 offset-lg-1">
                         <div class="cs_height_lg_40"></div>
                         <div class="cs_blog_wrap">
-                            @if (!empty(latest_posts(0, 6)))
-                                @foreach (latest_posts(0, 6) as $item)
+                            @if (!empty(latest_posts(0, 5)))
+                                @foreach (latest_posts(0, 5) as $item)
                                     <div class="cs_blog cs_style_2 cs_transition_4">
                                         <div class="flex-none">
                                             <a href="blog-details.html" class="cs_blog_thumbnail cs_zoom">

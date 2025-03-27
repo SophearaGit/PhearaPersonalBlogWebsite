@@ -7,7 +7,7 @@ use App\Models\Post;
 use App\Models\Category;
 use App\Models\User;
 use App\Helpers\CMail;
-
+use App\Models\Portfolio;
 use Illuminate\Http\Request;
 
 class BlogContoller extends Controller
@@ -275,13 +275,82 @@ class BlogContoller extends Controller
 
     public function portfolioPage(Request $request)
     {
-        $title = 'Portfolio';
-        $description = 'View my portfolio of projects, including web, mobile, and software development. I am always looking for new opportunities to showcase my skills.';
+        $portfolios = paginated_latest_portfolios();
+        $title = isset(settings()->site_title) ? settings()->site_title : '';
+        $description = isset(settings()->site_mete_description) ? settings()->site_meta_description : '';
+        $imageUrl = isset(settings()->site_logo) ? asset('/images/site/' . settings()->site_logo) : '';
+        $keywords = isset(settings()->site_meta_keywords) ? settings()->site_meta_keywords : '';
+        $currentUrl = url()->current();
+
+        /** META SEO */
         SEOTools::setTitle($title, false);
         SEOTools::setDescription($description);
+        SEOMeta::setKeywords($keywords);
 
-        return view('front.pages.portfolio');
+        /** OPEN GRAPH */
+        SEOTools::openGraph()
+            ->setUrl($currentUrl)
+            // ->addImage($imageUrl, ['height' => 600, 'width' => 315])
+            ->addImage($imageUrl)
+            ->addProperty('type', 'articles');
+
+
+        /** TWITTER */
+        SEOTools::twitter()
+            ->setUrl($currentUrl)
+            ->addImage($imageUrl)
+            ->setSite('@RaaBlog');
+
+        $data = [
+            'pageTitle' => $title,
+        ];
+        return view('front.pages.portfolio', $data, compact('portfolios'));
     }
+
+    public function readPortfolio(Request $request, $slug = null)
+    {
+        // fetch single post by slug
+        $portfolio = Portfolio::where('slug', $slug)
+            ->firstOrFail();
+
+        // fetch related posts
+        $relatedPortfolios = Portfolio::where('id', '!=', $portfolio->id)
+            ->orderBy('created_at', 'desc')
+            ->take(3)
+            ->get();
+
+        // fetch the next post
+        $nextPortfolios = Portfolio::where('id', '>', $portfolio->id)
+            ->orderBy('id', 'asc')
+            ->first();
+
+        // fetch the previous post
+        $prevPortfolio = Portfolio::where('id', '<', $portfolio->id)
+            ->orderBy('id', 'desc')
+            ->first();
+
+        // for meta tags
+        $title = $portfolio->title;
+        $description = ($portfolio->overview != '') ? $portfolio->overview : words($portfolio->content, 35);
+
+        SEOTools::setTitle($title, false);
+        SEOTools::setDescription($description);
+        SEOTools::opengraph()->setUrl(route('blog_read_portfolio', ['slug' => $portfolio->slug]));
+        SEOTools::opengraph()->addProperty('type', 'article');
+        SEOTools::opengraph()->addImage(asset('images/portfolios/' . $portfolio->featured_image));
+        SEOTools::twitter()->setImage(asset('images/portfolios/' . $portfolio->featured_image));
+
+        $data = [
+            'pageTitle' => $title,
+            'portfolio' => $portfolio,
+            'relatedPortfolios' => $relatedPortfolios,
+            'nextPortfolios' => $nextPortfolios,
+            'prevPortfolio' => $prevPortfolio,
+        ];
+
+        return view('front.pages.read_portfolio', $data);
+    }
+
 
     public function sendEmail(Request $request)
     {
