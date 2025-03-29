@@ -10,6 +10,13 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
+// create a function to count user portfolio
+if (!function_exists('count_user_portfolio')) {
+    function count_user_portfolio($user_id)
+    {
+        return Portfolio::where('author_id', $user_id)->count();
+    }
+}
 
 /**
  * Fetch user information
@@ -64,12 +71,12 @@ if (!function_exists('navigations')) {
 
         if (count($pcategories) > 0) {
             $navigation_html .= '
-                    <li class="menu-item-has-children"><a href="#!">Post</a>
+                    <li class="menu-item-has-children"><a href="javascript:;">Post</a>
                         <ul>
             ';
             foreach ($pcategories as $item) {
                 $navigation_html .= '
-                            <li><a href="#!">' . $item->name . '</a>
+                            <li><a href="javascript:;">' . $item->name . '</a>
                                 <ul>
                                     <li>
                 ';
@@ -91,7 +98,7 @@ if (!function_exists('navigations')) {
         if (count($categories) > 0) {
             foreach ($categories as $item) {
                 $navigation_html .= '
-                    <li> <a href="#!">' . $item->name . '</a></li>
+                    <li> <a href="javascript:;">' . $item->name . '</a></li>
                 ';
             }
         }

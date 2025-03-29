@@ -98,7 +98,7 @@
                             <div
                                 class="cs_happy_client position-absolute cs_white_bg d-flex align-items-center cs_radius_20 cs_gap_15">
                                 <div class="cs_font_36 cs_semi_bold cs_accent_color_2"><span class="odometer"
-                                        data-count-to="9"></span><span>+</span></div>
+                                        data-count-to="1"></span><span>+</span></div>
                                 <div>
                                     <h5 class="mb-0 cs_normal">Years</h5>
                                     <p class="mb-0 cs_font_16">Happy Clients</p>
@@ -161,9 +161,17 @@
                                         </p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span
-                                                class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">190
-                                                Projects</span>
-                                            <a href="portfolio.html"
+                                                class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">
+                                                @if (!user())
+                                                    100 Projects
+                                                @else
+                                                    @if (!empty(count_user_portfolio(user()->id)))
+                                                        {{ count_user_portfolio(user()->id) }}
+                                                    @endif
+                                                    Projects
+                                                @endif
+                                            </span>
+                                            <a href="{{ route('portfolio') }}"
                                                 class="cs_circle_btn cs_style_1 cs_accent_color_2 cs_center rounded-circle">
                                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -194,9 +202,17 @@
                                         <p class="cs_iconbox_text">View all my project base on back-end.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <span
-                                                class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">228
-                                                Projects</span>
-                                            <a href="portfolio.html"
+                                                class="cs_letter_spacing_15 cs_ternary_color cs_secondary_font cs_font_15 text-uppercase m-0">
+                                                @if (!user())
+                                                    100 Projects
+                                                @else
+                                                    @if (!empty(count_user_portfolio(user()->id)))
+                                                        {{ count_user_portfolio(user()->id) }}
+                                                    @endif
+                                                    Projects
+                                                @endif
+                                            </span>
+                                            <a href="{{ route('portfolio') }}"
                                                 class="cs_circle_btn cs_style_1 cs_accent_color_2 cs_center rounded-circle">
                                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -369,8 +385,8 @@
                         @endforeach
                     @endif
 
-                    @if (!empty(latest_posts(1, 2)))
-                        @foreach (latest_posts(1, 2) as $item)
+                    @if (!empty(latest_posts(1, 3)))
+                        @foreach (latest_posts(1, 3) as $item)
                             <div class="cs_blog cs_style_2 cs_transition_4">
                                 <a href="{{ route('blog_read_post', $item->slug) }}" class="cs_blog_thumbnail cs_zoom">
                                     <img class="cs_zoom_in"
@@ -381,7 +397,7 @@
                                     <h2 class="cs_blog_title cs_font_20 cs_semi_bold"><a class="cs_accent_color_2_hover"
                                             href="{{ route('blog_read_post', $item->slug) }}">{{ $item->title }}</a>
                                     </h2>
-                                    <p class="cs_gradient_text">{!! Str::ucfirst(words($latest_posts->content, 100)) !!}</p>
+                                    <p class="cs_gradient_text">{!! Str::ucfirst(words($item->content, 8)) !!}</p>
                                     <div class="cs_blog_avater d-flex align-items-center">
                                         {{-- <img src="/front/assets/img/blog/a3.png" alt="avatar_img"> --}}
                                         <a href="{{ route('blog_author_posts', $item->author->username) }}">
@@ -546,7 +562,7 @@
                             <div class="cs_funfact_in cs_filled_bg" data-src="/front/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
                                     <span>
-                                        <span class="odometer" data-count-to="10"></span>+
+                                        <span class="odometer" data-count-to="1"></span>+
                                     </span>
                                 </h3>
                                 <div class=" cs_funfact_text cs_font_24 cs_center m-0"><span>Years Of Experience</span>
@@ -591,7 +607,7 @@
                             <div class="cs_funfact_in cs_filled_bg" data-src="/front/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
                                     <span>
-                                        <span class="odometer" data-count-to="910"></span>+
+                                        <span class="odometer" data-count-to="2"></span>+
                                     </span>
                                 </h3>
                                 <div class=" cs_funfact_text cs_font_24 cs_center m-0"><span>Happy Clients</span></div>
@@ -635,7 +651,7 @@
                             <div class="cs_funfact_in cs_filled_bg" data-src="/front/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
                                     <span>
-                                        <span class="odometer" data-count-to="1200"></span>+
+                                        <span class="odometer" data-count-to="17"></span>+
                                     </span>
                                 </h3>
                                 <div class=" cs_funfact_text cs_font_24 cs_center m-0"><span>Projects Done
@@ -704,7 +720,7 @@
                     </div>
                     <div class="align-self-end">
                         <div class="cs_height_25 cs_height_lg_25"></div>
-                        <a class="cs_portfolio_text_btn d-inline-flex cs_gap_25 align-items-center cs_font_24 cs_accent_color cs_semi_bold"
+                        {{-- <a class="cs_portfolio_text_btn d-inline-flex cs_gap_25 align-items-center cs_font_24 cs_accent_color cs_semi_bold"
                             href="testimonial.html">
                             <span class="cs_text_btn">View All Testmonial</span>
                             <span class="cs_circle_btn cs_style_1 cs_accent_color cs_center rounded-circle">
@@ -723,7 +739,7 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </span>
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
                 <div class="cs_height_70 cs_height_lg_30"></div>
@@ -733,16 +749,19 @@
                             class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                             <div class="cs_testimonial_in">
                                 <div class="cs_testimonial_img overflow-hidden">
-                                    <img class="h-100 w-100" src="/front/assets/img/testmonial/a4.jpg" alt="avaterImg">
+                                    <img class="h-100 w-100" src="/images/company/ant.jpg" alt="avaterImg">
                                 </div>
                                 <div class="cs_testimonial_info">
                                     <img class="cs_testimonial_quote" src="/front/assets/img/icon/Quote.svg"
                                         alt="Testmonial Quote">
-                                    <p class="cs_testimonial_text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Aenean
-                                        commodo ligula eget dolor. Aenean massa. Cum sociis natoque </p>
+                                    <p class="cs_testimonial_text">Sopheara was a fantastic student and an even better
+                                        intern! He picked up web development skills fast and brought great energy to every
+                                        project. During his five-month internship, he proved to be creative,
+                                        hardworking, and a great team player. Any team would be lucky to have them!🚀
+                                    </p>
                                     <div class="cs_testimonial_author">
-                                        <div class="cs_author_name cs_font_20 cs_semi_bold">Jonathon Doe</div>
+                                        <div class="cs_author_name cs_font_20 cs_semi_bold">ANT Technology Training Center
+                                        </div>
                                         <div class="cs_author_designation cs_font_16">Business Owner</div>
                                     </div>
                                 </div>
@@ -754,17 +773,19 @@
                             class="cs_testimonial cs_style_2 cs_radius_20 cs_white_bg cs_transition_3 cs_transform_up_hover_3">
                             <div class="cs_testimonial_in">
                                 <div class="cs_testimonial_img overflow-hidden">
-                                    <img class="h-100 w-100" src="/front/assets/img/testmonial/a5.jpg" alt="avaterImg">
+                                    <img class="h-100 w-100" src="/images/company/mptc.jpg" alt="avaterImg">
                                 </div>
                                 <div class="cs_testimonial_info">
                                     <img class="cs_testimonial_quote" src="/front/assets/img/icon/Quote.svg"
                                         alt="Testmonial Quote">
-                                    <p class="cs_testimonial_text">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit. Aenean
-                                        commodo ligula eget dolor. Aenean massa. Cum sociis natoque </p>
+                                    <p class="cs_testimonial_text">During sopheara’s time at MPTC, he showcased
+                                        exceptional dedication, technical expertise, and a great problem-solving mindset.
+                                        His contributions were invaluable, and his passion for innovation made a real
+                                        impact on our projects. A true asset to any team!</p>
                                     <div class="cs_testimonial_author">
-                                        <div class="cs_author_name cs_font_20 cs_semi_bold">Ruki-Yead</div>
-                                        <div class="cs_author_designation cs_font_16">WordPress Developer</div>
+                                        <div class="cs_author_name cs_font_20 cs_semi_bold">Ministry of Post and
+                                            Telecommunications </div>
+                                        <div class="cs_author_designation cs_font_16">Business Owner</div>
                                     </div>
                                 </div>
                             </div>
@@ -793,14 +814,13 @@
                                         fill="#342EAD" />
                                 </svg>
                             </p>
-                            <h2 class="cs_section_title cs_font_48 cs_semi_bold">I work with over 150+ <span
-                                    class="cs_accent_color">happy clients</span>
+                            <h2 class="cs_section_title cs_font_48 cs_semi_bold">I used to worked with this <span
+                                    class="cs_accent_color">amazing company.</span>
                             </h2>
                             <div class="cs_height_25 cs_height_lg_10"></div>
-                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                ligula eget
-                                dolor.
-                                Aenean massa.
+                            <p class="mb-0">I have gained extensive experience with various new technologies from this
+                                outstanding company, and I am eager to apply these skills to contribute effectively to your
+                                organization.
                             </p>
                         </div>
                         <div class="cs_height_lg_30"></div>
@@ -808,43 +828,23 @@
                     <div class="col-lg-7 offset-lg-1">
                         <div class="cs_brands cs_style_1 cs_ml_30">
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                                <div class="cs_brand_logo_wrap cs_center cs_brand_bg_1">
-                                    <img class="cs_brand_logo" src="/front/assets/img/client/c1.svg" alt="">
-                                </div>
-                                <p class="m-0 cs_white_bg">Border</p>
+                                <img class="cs_brand_logo" src="/images/company/ant.jpg" alt="">
+                                <p class="m-0 cs_white_bg">ANT Technology Training Center</p>
                             </div>
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                                <div class="cs_brand_logo_wrap cs_center cs_brand_bg_2">
-                                    <img class="cs_brand_logo" src="/front/assets/img/client/c2.svg" alt="">
-                                </div>
-                                <p class="m-0 cs_white_bg">Rise</p>
+                                <img class="cs_brand_logo" src="/images/company/nu.png" alt="">
+                                <p class="m-0 cs_white_bg">Norton University</p>
                             </div>
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                                <div class="cs_brand_logo_wrap cs_center cs_brand_bg_3">
-                                    <img class="cs_brand_logo" src="/front/assets/img/client/c3.svg" alt="">
-                                </div>
-                                <p class="m-0 cs_white_bg">eBook</p>
+                                <img class="cs_brand_logo" src="/images/company/mptc.jpg" alt="">
+                                <p class="m-0 cs_white_bg">Ministry of Post and Telecommunications </p>
                             </div>
                         </div>
                         <div class="cs_height_50 cs_height_lg_30"></div>
                         <div class="cs_brands cs_style_1 cs_mr_30">
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                                <div class="cs_brand_logo_wrap cs_center cs_brand_bg_4">
-                                    <img class="cs_brand_logo" src="/front/assets/img/client/c4.svg" alt="">
-                                </div>
-                                <p class="m-0 cs_white_bg">Doctor Plus</p>
-                            </div>
-                            <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                                <div class="cs_brand_logo_wrap cs_center cs_brand_bg_5">
-                                    <img class="cs_brand_logo" src="/front/assets/img/client/c5.svg" alt="">
-                                </div>
-                                <p class="m-0 cs_white_bg">Pinpoint</p>
-                            </div>
-                            <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                                <div class="cs_brand_logo_wrap cs_center cs_brand_bg_6">
-                                    <img class="cs_brand_logo" src="/front/assets/img/client/c6.svg" alt="">
-                                </div>
-                                <p class="m-0 cs_white_bg">Recharge</p>
+                                <img class="cs_brand_logo" src="/images/company/dcc.jpg" alt="">
+                                <p class="m-0 cs_white_bg">Digital Community of Cambodia </p>
                             </div>
                         </div>
                     </div>
