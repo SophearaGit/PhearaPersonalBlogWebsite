@@ -117,7 +117,7 @@
                         <div class="align-self-end">
                             <div class="cs_height_25 cs_height_lg_25"></div>
                             <a class="cs_portfolio_text_btn d-inline-flex cs_gap_25 align-items-center cs_font_24 cs_accent_color cs_semi_bold"
-                                href="contact.html">
+                                href="{{ route('contact') }}">
                                 <span class="cs_text_btn">Hire Me</span>
                                 <span class="cs_circle_btn cs_style_1 cs_accent_color cs_center rounded-circle">
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -418,41 +418,27 @@
                                 fill="#342EAD" />
                         </svg>
                     </p>
-                    <h2 class="cs_section_title cs_font_48 cs_semi_bold">I work with over 150+<br> <span
-                            class="cs_accent_color">happy clients</span>
+                    <h2 class="cs_section_title cs_font_48 cs_semi_bold">I work with over 3+<br> <span
+                            class="cs_accent_color">happy company</span>
                     </h2>
                     <div class="cs_height_70 cs_height_lg_40"></div>
                 </div>
-                <div class="cs_brands cs_style_1 cs_type_1">
+                <div class="cs_brands cs_style_1 cs_type_2">
                     <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                        <div class="cs_brand_logo_wrap cs_center cs_brand_bg_1">
-                            <img class="cs_brand_logo" src="/front/assets/img/client/c1.svg" alt="">
-                        </div>
-                        <p class="m-0 cs_white_bg">Border</p>
+                        <img class="cs_brand_logo" src="/images/company/ant.jpg" alt="">
+                        <p class="m-0 cs_white_bg">ANT Technology Training Center</p>
                     </div>
                     <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                        <div class="cs_brand_logo_wrap cs_center cs_brand_bg_2">
-                            <img class="cs_brand_logo" src="/front/assets/img/client/c2.svg" alt="">
-                        </div>
-                        <p class="m-0 cs_white_bg">Rise</p>
+                        <img class="cs_brand_logo" src="/images/company/mptc.jpg" alt="">
+                        <p class="m-0 cs_white_bg">Ministry of Post and Telecommunications </p>
                     </div>
                     <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                        <div class="cs_brand_logo_wrap cs_center cs_brand_bg_3">
-                            <img class="cs_brand_logo" src="/front/assets/img/client/c3.svg" alt="">
-                        </div>
-                        <p class="m-0 cs_white_bg">eBook</p>
+                        <img class="cs_brand_logo" src="/images/company/nu.png" alt="">
+                        <p class="m-0 cs_white_bg">Norton University</p>
                     </div>
                     <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                        <div class="cs_brand_logo_wrap cs_center cs_brand_bg_4">
-                            <img class="cs_brand_logo" src="/front/assets/img/client/c4.svg" alt="">
-                        </div>
-                        <p class="m-0 cs_white_bg">Doctor Plus</p>
-                    </div>
-                    <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                        <div class="cs_brand_logo_wrap cs_center cs_brand_bg_5">
-                            <img class="cs_brand_logo" src="/front/assets/img/client/c5.svg" alt="">
-                        </div>
-                        <p class="m-0 cs_white_bg">Pinpoint</p>
+                        <img class="cs_brand_logo" src="/images/company/dcc.jpg" alt="">
+                        <p class="m-0 cs_white_bg">Digital Community of Cambodia</p>
                     </div>
                 </div>
             </div>
