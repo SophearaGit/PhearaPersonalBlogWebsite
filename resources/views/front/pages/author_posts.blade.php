@@ -17,7 +17,7 @@
                     </h1>
                     <p class="cs_hero_subtitle cs_font_24">
                         Do you have a project?
-                        <a href="contact.html" class="cs_semi_bold cs_accent_color cs_text_btn">Let’s Talk</a>
+                        <a href="{{ route('contact') }}" class="cs_semi_bold cs_accent_color cs_text_btn">Let’s Talk</a>
                     </p>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                         </h2>
                         <div class="cs_white_color cs_opacity_06">Client Satisfaction</div>
                     </div>
-                    <div class="cs_funfact cs_style_1 text-end">
+                    {{-- <div class="cs_funfact cs_style_1 text-end">
                         <h2 class="cs_funfact_number cs_font_24 cs_white_color cs_semi_bold m-0">
                             <span class="odometer odometer-auto-theme" data-count-to="690">
                                 <div class="odometer-inside"><span class="odometer-digit"><span
@@ -127,10 +127,10 @@
                             </span>+
                         </h2>
                         <div class="cs_white_color cs_opacity_06">Project Done</div>
-                    </div>
+                    </div> --}}
                     <div class="cs_funfact cs_style_1 text-end">
                         <h2 class="cs_funfact_number cs_font_24 cs_white_color cs_semi_bold m-0">
-                            <span class="odometer odometer-auto-theme" data-count-to="8">
+                            <span class="odometer odometer-auto-theme" data-count-to="1">
                                 <div class="odometer-inside"><span class="odometer-digit"><span
                                             class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span
                                                 class="odometer-ribbon"><span class="odometer-ribbon-inner"><span
@@ -142,11 +142,10 @@
                 </div>
             </div>
         </section>
-        <div class="cs_height_60 cs_height_lg_40"></div>
-
         <!-- Start Hero Section -->
         <section class="cs_filled_bg" data-src="/front/assets/img/bg/brands_bg_1.svg"
             style="background-image: url(&quot;/front/assets/img/bg/brands_bg_1.svg&quot;);">
+            <div class="cs_height_37 cs_height_lg_20"></div>
             <div class="container">
                 <div class="cs_section_heading cs_style_1 text-center">
                     <p class="cs_section_subtitle cs_center cs_accent_color_2 cs_font_16 wow fadeInUp"
@@ -171,21 +170,19 @@
                     @if ($posts->count())
                         @foreach ($posts as $item)
                             <div class="cs_brand overflow-hidden cs_radius_10 text-center">
-                                {{-- <div class="cs_brand_logo_wrap cs_center cs_brand_bg_1"
-                                    style="overflow: hidden; position: relative;">
+                                <a href="{{ route('blog_read_post', $item->slug) }}">
                                     <img class="cs_brand_logo"
-                                        src="/images/posts/resized/resized_{{ $item->featured_image }}" alt=""
-                                        style="width: 100%; height: auto; object-fit: contain; display: block;">
-                                </div> --}}
-                                <img class="cs_brand_logo" src="/images/posts/resized/resized_{{ $item->featured_image }}"
-                                    alt="">
-                                <p class="m-0 cs_white_bg cs_font_10 cs_semi_bold"> {{ $item->title }} </p>
-                                <p class="m-0 cs_white_bg"><i class="fa-solid fa-calendar-days"></i>
-                                    {{ date_formatter($item->created_at) }} </p>
+                                        src="/images/posts/resized/resized_{{ $item->featured_image }}" alt="">
+                                </a>
+                                <a href="{{ route('blog_read_post', $item->slug) }}">
+                                    <p class="m-0 cs_white_bg cs_font_10 cs_semi_bold"> {{ $item->title }} </p>
+                                </a>
                                 <p class="m-0 cs_white_bg">
                                     <a href="{{ route('blog_author_posts', $item->author->username) }}">Author:
                                         {{ $item->author->name }}</a>
                                 </p>
+                                <p class="m-0 cs_white_bg"><i class="fa-solid fa-calendar-days"></i>
+                                    {{ date_formatter($item->created_at) }} </p>
                             </div>
                         @endforeach
                     @else

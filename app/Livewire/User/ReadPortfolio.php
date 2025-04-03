@@ -12,7 +12,7 @@ class ReadPortfolio extends Component
     public $tabname = 'overview';
     protected $queryString = ['tab' => ['keep' => true]];
 
-    public function selectTab($tab)
+    public function selecttab($tab)
     {
         $this->tab = $tab;
     }
