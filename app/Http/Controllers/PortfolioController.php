@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\Facades\Image;
 
-class PortfolioController extends Controller
+class portfoliocontroller extends Controller
 {
     // Show Add Portfolio Form
     public function addPortfolio(Request $request)
