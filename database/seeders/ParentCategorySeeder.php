@@ -13,6 +13,6 @@ class ParentCategorySeeder extends Seeder
      */
     public function run(): void
     {
-        ParentCategory::factory(20)->create();
+        ParentCategory::factory(9)->create();
     }
 }

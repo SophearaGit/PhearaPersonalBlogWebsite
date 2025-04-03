@@ -33,30 +33,35 @@
                            </div>
                            <ul class="cs_mp_0">
                                <li class="{{ $tab == 'overview' ? 'active' : '' }}">
-                                   <a href="javascript:void(0)" wire:click="selectTab('overview')">Overview</a>
+                                   <a href="#overview" wire:click="selectTab('overview')"
+                                       onclick="event.preventDefault();">Overview</a>
                                </li>
                                @if ($portfolio->project_challenge != null)
                                    <li class="{{ $tab == 'project_challenge' ? 'active' : '' }}">
-                                       <a href="javascript:void(0)" wire:click="selectTab('project_challenge')">Project
+                                       <a href="#project_challenge" wire:click="selectTab('project_challenge')"
+                                           onclick="event.preventDefault();">Project
                                            Challenge</a>
                                    </li>
                                @endif
                                @if ($portfolio->design_research != null)
                                    <li class="{{ $tab == 'design_research' ? 'active' : '' }}">
-                                       <a href="javascript:void(0)" wire:click="selectTab('design_research')">
+                                       <a href="#design_research" wire:click="selectTab('design_research')"
+                                           onclick="event.preventDefault();">
                                            Design Research
                                        </a>
                                    </li>
                                @endif
                                @if ($portfolio->design_approach != null)
                                    <li class="{{ $tab == 'design_approach' ? 'active' : '' }}">
-                                       <a href="javascript:void(0)" wire:click="selectTab('design_approach')">
+                                       <a href="#design_approach" wire:click="selectTab('design_approach')"
+                                           onclick="event.preventDefault();">
                                            Design Approach</a>
                                    </li>
                                @endif
                                @if ($portfolio->the_solution != null)
                                    <li class="{{ $tab == 'the_solution' ? 'active' : '' }}">
-                                       <a href="javascript:void(0)" wire:click="selectTab('the_solution')">
+                                       <a href="#the_solution" wire:click="selectTab('the_solution')"
+                                           onclick="event.preventDefault();">
                                            The Solutions</a>
                                    </li>
                                @endif

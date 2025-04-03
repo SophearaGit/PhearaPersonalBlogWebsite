@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use Faker\Generator as Faker;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
@@ -37,14 +38,16 @@ class PostSeeder extends Seeder
             File::makeDirectory($resizedPath, 0777, true, true);
         }
 
+        $faker = \Faker\Factory::create();
+
         // Array of posts data
         $posts = [
             // LARAVEL CATEGORY PART
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Mastering Laravel Eloquent Relationships',
-                'slug' => Str::slug('Mastering Laravel Eloquent Relationships'),
+                // 'slug' => Str::slug('Mastering Laravel Eloquent Relationships'),
                 'content' => 'Eloquent, Laravel\'s ORM, provides a powerful way to manage database relationships. This post will dive deep into the different types of relationships in Eloquent, such as one-to-one, one-to-many, many-to-many, and polymorphic relationships. You\'ll learn how to define and utilize these relationships in your Laravel applications.',
                 'tags' => 'Laravel, Eloquent, Database, Relationships, ORM',
                 'meta_keywords' => 'laravel eloquent, database relationships, one-to-one, one-to-many, many-to-many, polymorphic',
@@ -53,9 +56,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Building a RESTful API with Laravel',
-                'slug' => Str::slug('Building a RESTful API with Laravel'),
                 'content' => 'In this tutorial, you\'ll learn how to build a RESTful API using Laravel. We\'ll cover topics such as route definitions, resource controllers, API versioning, authentication, and response formatting. By the end of this post, you\'ll have a solid understanding of how to create a robust and scalable API with Laravel.',
                 'tags' => 'Laravel, API, RESTful, Web Services, Backend Development',
                 'meta_keywords' => 'laravel api, restful api, web services, backend development, api versioning',
@@ -64,9 +66,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Deploying Laravel Applications with Docker',
-                'slug' => Str::slug('Deploying Laravel Applications with Docker'),
                 'content' => 'Docker is a powerful tool for containerizing and deploying web applications. In this guide, you\'ll learn how to package a Laravel application and its dependencies into a Docker container, and then deploy the containerized application to a production environment. We\'ll cover topics such as Dockerfile configuration, Docker Compose, and best practices for deploying Laravel apps with Docker.',
                 'tags' => 'Laravel, Docker, Deployment, Containerization, DevOps',
                 'meta_keywords' => 'laravel docker, containerization, web application deployment, devops, docker compose',
@@ -75,9 +76,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Optimizing Laravel Performance: Caching and Queuing',
-                'slug' => Str::slug('Optimizing Laravel Performance: Caching and Queuing'),
                 'content' => 'Performance is a critical aspect of any web application. In this post, we\'ll explore two powerful features in Laravel - caching and queuing - and how they can be used to optimize the performance of your Laravel applications. You\'ll learn about different caching strategies, setting up a Redis-based cache, and leveraging Laravel\'s queuing system to handle time-consuming tasks asynchronously.',
                 'tags' => 'Laravel, Performance, Caching, Queuing, Redis, Asynchronous Processing',
                 'meta_keywords' => 'laravel performance, caching, queuing, redis, asynchronous processing, web application optimization',
@@ -86,9 +86,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Implementing Authentication in Laravel with Sanctum',
-                'slug' => Str::slug('Implementing Authentication in Laravel with Sanctum'),
                 'content' => 'Sanctum is a lightweight authentication package for Laravel that provides a simple, token-based authentication system for your API and SPA applications. In this post, you\'ll learn how to set up Sanctum, create API tokens, and secure your Laravel application\'s routes and endpoints using Sanctum\'s powerful features.',
                 'tags' => 'Laravel, Authentication, Sanctum, API, SPA, Token-based Authentication',
                 'meta_keywords' => 'laravel sanctum, api authentication, spa authentication, token-based authentication, web application security',
@@ -97,9 +96,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Building a Real-Time Chat Application with Laravel and WebSockets',
-                'slug' => Str::slug('Building a Real-Time Chat Application with Laravel and WebSockets'),
                 'content' => 'In this tutorial, you\'ll learn how to build a real-time chat application using Laravel and WebSockets. We\'ll cover the setup of a WebSocket server, integrating it with a Laravel backend, and building a responsive front-end user interface using a JavaScript framework like Vue.js or React. By the end of this post, you\'ll have a solid understanding of how to create real-time, bidirectional communication in your web applications.',
                 'tags' => 'Laravel, WebSockets, Real-Time, Chat Application, Vue.js, React',
                 'meta_keywords' => 'laravel websockets, real-time chat application, bidirectional communication, vue.js, react, web application development',
@@ -108,9 +106,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Implementing Soft Deletes in Laravel Eloquent',
-                'slug' => Str::slug('Implementing Soft Deletes in Laravel Eloquent'),
                 'content' => 'Soft deletes is a powerful feature in Laravel Eloquent that allows you to "soft delete" records instead of permanently removing them from the database. In this post, you\'ll learn how to set up soft deletes, retrieve both soft-deleted and active records, and use the Trashed scope to filter your queries. We\'ll also discuss the benefits of soft deletes and best practices for implementing this feature in your Laravel applications.',
                 'tags' => 'Laravel, Eloquent, Soft Deletes, Database, Data Retention',
                 'meta_keywords' => 'laravel soft deletes, eloquent soft deletes, database data retention, record archiving, web application development',
@@ -119,9 +116,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Integrating Laravel with a Third-Party API',
-                'slug' => Str::slug('Integrating Laravel with a Third-Party API'),
                 'content' => 'Integrating with third-party APIs is a common requirement for many web applications. In this post, you\'ll learn how to integrate your Laravel application with a third-party API, such as a payment gateway, weather service, or social media platform. We\'ll cover topics like making HTTP requests, handling responses, and managing API authentication and authorization.',
                 'tags' => 'Laravel, API Integration, Third-Party APIs, HTTP Requests, Authentication, Authorization',
                 'meta_keywords' => 'laravel api integration, third-party api, http requests, api authentication, api authorization, web application development',
@@ -130,9 +126,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Implementing Localization and Internationalization in Laravel',
-                'slug' => Str::slug('Implementing Localization and Internationalization in Laravel'),
                 'content' => 'Localization and internationalization are essential features for web applications that cater to a global audience. In this post, you\'ll learn how to implement localization and internationalization in your Laravel applications. We\'ll cover topics such as translating content, handling date and time formats, and providing language-specific URLs.',
                 'tags' => 'Laravel, Localization, Internationalization, Translations, Globalization, Multilingual',
                 'meta_keywords' => 'laravel localization, laravel internationalization, translations, multilingual web applications, globalization, web development',
@@ -141,9 +136,8 @@ class PostSeeder extends Seeder
             ],
             [
                 'author_id' => User::first()->id,
-                'category' => 21,
+                'category' => 10,
                 'title' => 'Securing Laravel Applications with Two-Factor Authentication',
-                'slug' => Str::slug('Securing Laravel Applications with Two-Factor Authentication'),
                 'content' => 'Two-factor authentication (2FA) is a crucial security feature for modern web applications. In this post, you\'ll learn how to implement two-factor authentication in your Laravel applications using the Laravel Fortify package. We\'ll cover setting up 2FA, integrating with third-party 2FA providers, and providing a seamless user experience for your application\'s users.',
                 'tags' => 'Laravel, Security, Two-Factor Authentication, 2FA, Fortify, User Authentication',
                 'meta_keywords' => 'laravel two-factor authentication, 2fa, laravel fortify, web application security, user authentication, multi-factor authentication',

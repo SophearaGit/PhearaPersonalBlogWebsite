@@ -65,7 +65,7 @@ class CategoryFactory extends Factory
 
         return [
             'name' => array_shift($childCategories),
-            'parent' => $this->faker->numberBetween(1, 20),
+            'parent' => $this->faker->numberBetween(1, 9),
         ];
     }
 }
