@@ -29,7 +29,7 @@
                                     <h4 class="cs_iconbox_title cs_font_24 cs_semi_bold">My Articles</h4>
                                     <p class="cs_iconbox_text">Become an industry expert</p>
                                     <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn"
-                                        href="blog-details.html">Read Articles</a>
+                                        href="{{ route('blog') }}">Read Articles</a>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                                 <div class="cs_iconbox_info">
                                     <h4 class="cs_iconbox_title cs_font_24 cs_semi_bold">FAQ's</h4>
                                     <p class="cs_iconbox_text">Become an industry expert</p>
-                                    <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn" href="faq.html">Check
+                                    <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn" href="javascript:;">Check
                                         FAQ’s</a>
                                 </div>
                             </div>
@@ -67,7 +67,8 @@
                                 <div class="cs_iconbox_info">
                                     <h4 class="cs_iconbox_title cs_font_24 cs_semi_bold">Direct email</h4>
                                     <p class="cs_iconbox_text">Become an industry expert</p>
-                                    <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn" href="contact.html">Send
+                                    <a class="cs_accent_color_2 cs_accent_color_hover cs_text_btn"
+                                        href="{{ route('contact') }}">Send
                                         An Email</a>
                                 </div>
                             </div>

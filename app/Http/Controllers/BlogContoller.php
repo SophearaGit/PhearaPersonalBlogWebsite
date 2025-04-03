@@ -157,7 +157,6 @@ class BlogContoller extends Controller
             'tag' => $tag,
             'posts' => $posts,
             'description' => $description,
-
         ];
         return view('front.pages.tag_posts', $data);
     }

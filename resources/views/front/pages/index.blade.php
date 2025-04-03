@@ -97,11 +97,11 @@
                             </div>
                             <div
                                 class="cs_happy_client position-absolute cs_white_bg d-flex align-items-center cs_radius_20 cs_gap_15">
-                                <div class="cs_font_36 cs_semi_bold cs_accent_color_2"><span class="odometer"
-                                        data-count-to="1"></span><span>+</span></div>
+                                {{-- <div class="cs_font_36 cs_semi_bold cs_accent_color_2"><span class="odometer"
+                                        data-count-to=""></span><span>+</span></div> --}}
                                 <div>
-                                    <h5 class="mb-0 cs_normal">Years</h5>
-                                    <p class="mb-0 cs_font_16">Happy Clients</p>
+                                    <h5 class="mb-0 cs_normal">Apology on any error,</h5>
+                                    <p class="mb-0 cs_font_16">Website is under development.</p>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
             <div class="position-absolute cs_about_shape_3">
                 <img src="/front/assets/img/about_shape_2.svg" alt="">
             </div>
-            <div class="cs_height_150 cs_height_lg_80"></div>
+            <div class="cs_height_75 cs_height_lg_40"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -270,13 +270,15 @@
                     </div>
                 </div>
             </div>
-            <div class="cs_height_150 cs_height_lg_80"></div>
+            {{-- <div class="cs_height_150 cs_height_lg_80"></div> --}}
+            <div class="cs_height_75 cs_height_lg_40"></div>
         </section>
         <!-- End About Section -->
 
         <!-- Start Blog Section -->
         <section class="cs_filled_bg" data-src="/front/assets/img/bg/blog_bg_2.png">
-            <div class="cs_height_145 cs_height_lg_75"></div>
+            {{-- <div class="cs_height_145 cs_height_lg_75"></div> --}}
+            <div class="cs_height_75 cs_height_lg_40"></div>
             <div class="container">
                 <div class="d-md-flex justify-content-between">
                     <div class="cs_section_heading cs_style_1">
@@ -295,7 +297,8 @@
                         </h2>
                     </div>
                     <div class="align-self-end">
-                        <div class="cs_height_25 cs_height_lg_25"></div>
+                        {{-- <div class="cs_height_25 cs_height_lg_25"></div> --}}
+                        <div class="cs_height_75 cs_height_lg_40"></div>
                         <a class="d-inline-flex cs_gap_15 align-items-center text-uppercase cs_letter_spacing_15 cs_font_16 cs_accent_color"
                             href="{{ route('blog') }}">
                             <span class="cs_text_btn">View All Post</span>
@@ -306,7 +309,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="cs_height_70 cs_height_lg_30"></div>
+                {{-- <div class="cs_height_70 cs_height_lg_30"></div> --}}
+                <div class="cs_height_75 cs_height_lg_40"></div>
                 <div class="cs_blog_group_1">
                     @if (!empty(latest_posts(0, 1)))
                         @foreach (latest_posts(0, 1) as $latest_posts)
@@ -384,7 +388,6 @@
                             </div>
                         @endforeach
                     @endif
-
                     @if (!empty(latest_posts(1, 3)))
                         @foreach (latest_posts(1, 3) as $item)
                             <div class="cs_blog cs_style_2 cs_transition_4">
@@ -451,13 +454,14 @@
                     @endif
                 </div>
             </div>
-            <div class="cs_height_150 cs_height_lg_80"></div>
+            {{-- <div class="cs_height_150 cs_height_lg_80"></div> --}}
+            <div class="cs_height_75 cs_height_lg_40"></div>
         </section>
         <!-- End Blog Section -->
 
         <!-- Start Portfolio Section -->
         <section class="cs_filled_bg cs_100_bg" data-src="/front/assets/img/bg/protfolio_bg2.png">
-            <div class="cs_height_150 cs_height_lg_80"></div>
+            <div class="cs_height_75 cs_height_lg_40"></div>
             <div class="container">
                 <div class="cs_isotop cs_isotop_col_2 cs_has_gutter_80">
                     <div class="cs_grid_sizer"></div>
@@ -480,9 +484,8 @@
                             </div>
                         </div>
                     </div>
-
-                    @if (!empty(latest_portfolios(0, limit: 3)))
-                        @foreach (latest_portfolios(0, 3) as $latest_portfolios)
+                    @if (!empty(latest_portfolios(0, limit: 4)))
+                        @foreach (latest_portfolios(0, 4) as $latest_portfolios)
                             <div class="cs_isotop_item">
                                 <div class="cs_portfolio cs_style_2 cs_radius_20 position-relative">
                                     <div class="cs_browser cs_style_1">
@@ -516,12 +519,10 @@
                             </div>
                         @endforeach
                     @endif
-
-
                 </div>
             </div>
-            <div class="cs_height_100 cs_height_lg_30"></div>
-
+            <div class="cs_height_75 cs_height_lg_40"></div>
+            {{-- <div class="cs_height_100 cs_height_lg_30"></div> --}}
             <div class="cs_portfolio cs_style_2 text-center cs_radius_20 overflow-hidden wow fadeInUp"
                 data-wow-duration="0.8s" data-wow-delay="0.2s"
                 style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInUp;">
@@ -546,9 +547,7 @@
                     </span>
                 </a>
             </div>
-            <div class="cs_height_100 cs_height_lg_30"></div>
-
-            {{-- <div class="cs_height_150 cs_height_lg_80"></div> --}}
+            <div class="cs_height_75 cs_height_lg_40"></div>
         </section>
         <!-- End Portfolio Section -->
 
@@ -557,7 +556,7 @@
             <div class="cs_funfact_bg cs_filled_bg" data-src="/front/assets/img/bg/funfact_bg_1.svg"></div>
             <div class="container">
                 <div class="row cs_gap_40">
-                    <div class="col-lg-4 cs_mt_40">
+                    <div class="col-lg-6 cs_mt_35">
                         <div class="cs_funfact cs_style_2 text-center">
                             <div class="cs_funfact_in cs_filled_bg" data-src="/front/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
@@ -602,7 +601,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 cs_mt_40">
+                    <div class="col-lg-6 cs_mt_35">
                         <div class="cs_funfact cs_style_2 text-center">
                             <div class="cs_funfact_in cs_filled_bg" data-src="/front/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
@@ -646,7 +645,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 cs_mt_40">
+                    {{-- <div class="col-lg-4 cs_mt_40">
                         <div class="cs_funfact cs_style_2 text-center">
                             <div class="cs_funfact_in cs_filled_bg" data-src="/front/assets/img/bg/funfact_bg.svg">
                                 <h3 class="cs_funfact_number cs_font_48 cs_semi_bold cs_center m-0 overflow-hidden">
@@ -690,7 +689,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
@@ -698,7 +697,7 @@
 
         <!-- Start Testimonial Section -->
         <section class="position-relative">
-            <div class="cs_height_145 cs_height_lg_80"></div>
+            <div class="cs_height_75 cs_height_lg_40"></div>
             <div class="container">
                 <div class="d-lg-flex justify-content-between">
                     <div class="cs_section_heading cs_style_1">
@@ -793,13 +792,14 @@
                     </div>
                 </div>
             </div>
-            <div class="cs_height_125 cs_height_lg_55"></div>
+            <div class="cs_height_37 cs_height_lg_20"></div>
+
         </section>
         <!-- End Testimonial Section -->
 
         <!-- Start Brand Section -->
         <section>
-            <div class="cs_height_150 cs_height_lg_80"></div>
+            <div class="cs_height_75 cs_height_lg_40"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -850,7 +850,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cs_height_150 cs_height_lg_80"></div>
+            <div class="cs_height_75 cs_height_lg_40"></div>
         </section>
         <!-- End Brand Section -->
     </main>

@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="cs_main_header_in">
                     <div class="cs_main_header_left">
-                        <a class="cs_site_branding" href="{{route('home')}}">
+                        <a class="cs_site_branding" href="{{ route('home') }}">
                             {{-- <img src="/images/site/{{ isset(settings()->site_logo) ? settings()->site_logo : 'Sopheara' }}"
                                 alt="Logo"> --}}
                             <span class="cs_gradient_text">👨RADODEV</span>
@@ -39,15 +39,15 @@
                     <div class="cs_main_header_center">
                         <div class="cs_nav">
                             <ul class="cs_nav_list">
-                                <li class="{{ Route::is(['home', '']) ? 'active' : '' }} menu-item-has-children"><a
+                                <li class="{{ Route::is(['home', '']) ? 'active' : '' }}"><a
                                         href="{{ route('home') }}">Home</a>
                                 </li>
-                                <li class=" {{ Route::is(['about', '']) ? 'active' : '' }} menu-item-has-children"><a
+                                <li class=" {{ Route::is(['about', '']) ? 'active' : '' }}"><a
                                         href="{{ route('about') }}">About</a>
                                 </li>
                                 {{-- for the dynamic li --}}
                                 {!! navigations() !!}
-                                <li class=" {{ Route::is(['portfolio', '']) ? 'active' : '' }} menu-item-has-children">
+                                <li class=" {{ Route::is(['portfolio', 'blog_read_portfolio']) ? 'active' : '' }}">
                                     <a href="{{ route('portfolio') }}">Portfolio</a>
                                 </li>
                                 {{-- <li class="menu-item-has-children"><a href="#">Pages</a>
@@ -57,9 +57,12 @@
                                         <li><a href="404.html">Error 404</a></li>
                                     </ul>
                                 </li> --}}
-                                <li class="menu-item-has-children {{ Route::is(['blog', '']) ? 'active' : '' }}"><a
-                                        href="{{ route('blog') }}">Blog</a></li>
-                                <li> <a href="{{ route('contact') }}">Contact</a></li>
+                                <li
+                                    class="{{ Route::is(['blog', 'blog_read_post', 'blog_search_posts', 'blog_tag_posts', 'blog_category_posts']) ? 'active' : '' }}">
+                                    <a href="{{ route('blog') }}">Blog</a>
+                                </li>
+                                <li class="{{ Route::is(['contact']) ? 'active' : '' }}"> <a
+                                        href="{{ route('contact') }}">Contact</a></li>
                             </ul>
                         </div>
                     </div>

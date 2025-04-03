@@ -9,6 +9,8 @@ use App\Models\UserSocialLink;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Route;
+
 
 // create a function to count user portfolio
 if (!function_exists('count_user_portfolio')) {
@@ -71,16 +73,17 @@ if (!function_exists('navigations')) {
 
         if (count($pcategories) > 0) {
             $navigation_html .= '
-                    <li class="menu-item-has-children"><a href="javascript:;">Post</a>
-                        <ul>
+                <li class="menu-item-has-children">
+                        <a href="javascript:;">Post</a>
+                    <ul>
             ';
             foreach ($pcategories as $item) {
                 $navigation_html .= '
-                            <li><a href="javascript:;">' . $item->name . '</a>
+                            <li class="menu-item-has-children"><a href="javascript:;">' . $item->name . '</a>
                                 <ul>
                                     <li>
                 ';
-                foreach ($item->children as $category) {
+                foreach ($item->children->filter(fn($child) => $child->posts->count() > 0) as $category) {
                     $navigation_html .= '<a href=" ' . route('blog_category_posts', $category->slug) . ' ">' . $category->name . '</a>';
                 }
                 $navigation_html .= '

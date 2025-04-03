@@ -25,7 +25,7 @@
                                     <div class="flex-none">
                                         <a href="blog-details.html" class="cs_blog_thumbnail cs_zoom">
                                             <img class="cs_zoom_in "
-                                                src="{{ $item->featured_image ? asset('images/posts/resized/resized_' . $item->featured_image) : asset('/images/default/funntmr.jpg') }}"
+                                                src="{{ $item->featured_image ? asset('images/posts/resized/thumb_' . $item->featured_image) : asset('/images/default/funntmr.jpg') }}"
                                                 alt="">
                                         </a>
                                     </div>
