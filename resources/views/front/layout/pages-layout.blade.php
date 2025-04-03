@@ -42,7 +42,7 @@
                                 <li class="{{ Route::is(['home', '']) ? 'active' : '' }}"><a
                                         href="{{ route('home') }}">Home</a>
                                 </li>
-                                <li class=" {{ Route::is(['about', '']) ? 'active' : '' }}"><a
+                                <li class=" {{ Route::is(['about', 'blog_author_posts', '']) ? 'active' : '' }}"><a
                                         href="{{ route('about') }}">About</a>
                                 </li>
                                 {{-- for the dynamic li --}}
