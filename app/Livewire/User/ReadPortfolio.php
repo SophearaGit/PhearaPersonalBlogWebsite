@@ -5,7 +5,7 @@ namespace App\Livewire\User;
 use Livewire\Component;
 use App\Models\Portfolio;
 
-class ReadPortfolio extends Component
+class readportfolio extends Component
 {
     public $slug = null;
     public $tab = null;
