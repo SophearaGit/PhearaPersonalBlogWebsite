@@ -5,14 +5,14 @@ namespace App\Livewire\User;
 use Livewire\Component;
 use App\Models\Portfolio;
 
-class readportfolio extends Component
+class ReadPortfolio extends Component
 {
     public $slug = null;
     public $tab = null;
     public $tabname = 'overview';
     protected $queryString = ['tab' => ['keep' => true]];
 
-    public function selecttab($tab)
+    public function selectTab($tab)
     {
         $this->tab = $tab;
     }
