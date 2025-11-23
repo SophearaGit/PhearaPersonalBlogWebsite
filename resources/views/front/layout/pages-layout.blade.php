@@ -20,66 +20,12 @@
 </head>
 
 <body>
-    <div class="cs_preloader cs_center">
-        <div class="cs_preloader_in"></div>
-    </div>
-
-    <!-- Start Header Section -->
-    <header class="cs_site_header cs_style_1 cs_sticky_header cs_color_2">
-        <div class="cs_main_header">
-            <div class="container">
-                <div class="cs_main_header_in">
-                    <div class="cs_main_header_left">
-                        <a class="cs_site_branding" href="{{ route('home') }}">
-                            {{-- <img src="/images/site/{{ isset(settings()->site_logo) ? settings()->site_logo : 'Sopheara' }}"
-                                alt="Logo"> --}}
-                            <span class="cs_gradient_text">👨RADODEV</span>
-                        </a>
-                    </div>
-                    <div class="cs_main_header_center">
-                        <div class="cs_nav">
-                            <ul class="cs_nav_list">
-                                <li class="{{ Route::is(['home', '']) ? 'active' : '' }}"><a
-                                        href="{{ route('home') }}">Home</a>
-                                </li>
-                                <li class=" {{ Route::is(['about', 'blog_author_posts', '']) ? 'active' : '' }}"><a
-                                        href="{{ route('about') }}">About</a>
-                                </li>
-                                {{-- for the dynamic li --}}
-                                {!! navigations() !!}
-                                <li class=" {{ Route::is(['portfolio', 'blog_read_portfolio']) ? 'active' : '' }}">
-                                    <a href="{{ route('portfolio') }}">Portfolio</a>
-                                </li>
-                                {{-- <li class="menu-item-has-children"><a href="#">Pages</a>
-                                    <ul>
-                                        <li><a href="testimonial.html">Testimonial</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="404.html">Error 404</a></li>
-                                    </ul>
-                                </li> --}}
-                                <li
-                                    class="{{ Route::is(['blog', 'blog_read_post', 'blog_search_posts', 'blog_tag_posts', 'blog_category_posts']) ? 'active' : '' }}">
-                                    <a href="{{ route('blog') }}">Blog</a>
-                                </li>
-                                <li class="{{ Route::is(['contact']) ? 'active' : '' }}"> <a
-                                        href="{{ route('contact') }}">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="cs_main_header_right">
-                        <a href="{{ route('contact') }}" class="cs_btn cs_style_1 cs_primary_font"><span>Hire
-                                Me</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- End Header Section -->
-
-    <!-- Main content inside start-->
-    @yield('content')
-    <!-- Main content inside end-->
-
+    {{-- @include('front.layout.partials.preloader') --}}
+    @include('front.layout.partials.header')
+    <main>
+        @yield('content')
+    </main>
+    {{-- @include(view: 'front.layout.partials.footer') --}}
     <!-- Start Footer -->
     <footer class="cs_footer cs_style_1 cs_filled_bg position-relative" data-src="/front/assets/img/bg/footer_bg.svg">
         <div class="position-absolute cs_footer_shape_1">
@@ -95,7 +41,6 @@
         </div>
     </footer>
     <!-- End Footer -->
-
     <!-- Script -->
     <script src="/front/assets/js/plugins/jquery-3.6.0.min.js"></script>
     <script src="/front/assets/js/plugins/gsap.min.js"></script>

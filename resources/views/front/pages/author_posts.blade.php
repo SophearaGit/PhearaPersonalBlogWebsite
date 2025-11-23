@@ -4,7 +4,7 @@
     {!! SEO::generate() !!}
 @endsection
 @section('content')
-    <main>
+
         <!-- Start Hero Section -->
         <section class="cs_hero cs_style_1 cs_filled_bg" data-src="/front/assets/img/bg/hero_bg.svg"
             style="background-image: url(&quot;/front/assets/img/bg/hero_bg.svg&quot;);">
@@ -142,6 +142,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Start Hero Section -->
         <section class="cs_filled_bg" data-src="/front/assets/img/bg/brands_bg_1.svg"
             style="background-image: url(&quot;/front/assets/img/bg/brands_bg_1.svg&quot;);">
@@ -195,5 +196,5 @@
             {{ $posts->appends(request()->input())->links('custom_pagination') }}
             <div class="cs_height_60 cs_height_lg_40"></div>
         </section>
-    </main>
+
 @endsection

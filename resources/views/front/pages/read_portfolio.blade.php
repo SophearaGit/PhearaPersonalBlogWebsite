@@ -4,7 +4,6 @@
     {!! SEO::generate() !!}
 @endsection
 @section('content')
-    <main>
         <!-- Start Hero Section -->
         <section class="cs_hero cs_style_3 cs_type_2 cs_filled_bg  text-center" data-src="/front/assets/img/bg/hero_bg_5.svg"
             style="background-image: url(&quot;/front/assets/img/bg/hero_bg_5.svg&quot;);">
@@ -35,5 +34,4 @@
         </div>
         <!--End imagebox Section-->
         @livewire('user.read-portfolio', ['slug' => $portfolio->slug])
-    </main>
 @endsection
