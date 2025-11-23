@@ -4,7 +4,7 @@
     {!! SEO::generate() !!}
 @endsection
 @section('content')
-    <main>
+
         <!-- Start Blog Section -->
         <div class="cs_height_90 cs_height_lg_90"></div>
         <div class="cs_height_120 cs_height_lg_80"></div>
@@ -148,5 +148,5 @@
             <div class="cs_height_150 cs_height_lg_80"></div>
         </section>
         <!-- End Blog Section -->
-    </main>
+
 @endsection
